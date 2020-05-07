@@ -11,7 +11,7 @@
                                                 <img src="<?php echo $level.img_path.$pd['img']; ?>" alt="">
                                                 <?php 
                                                     if($pd['sale-box'] == true)
-                                                        include_once ($level.php_path.content_path.'sale-box.php');
+                                                        include ($level.php_path.content_path.'sale-box.php');
                                                 ?>
                                                 <div class="icon">
                                                     <i class="icon_heart_alt"></i>

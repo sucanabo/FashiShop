@@ -3,5 +3,5 @@
     $level = lv1;
     $shop_page =  true;
     $value_bre = 'Shop';
-    include_once ($level.'layout-test.php');
+    include_once ($level.'layouts.php');
 ?>

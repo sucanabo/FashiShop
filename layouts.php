@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html lang="zxx">
-<?php include_once ($level.php_path.head_path.'head.php') ?>
-
+<html lang="en">
+<?php 
+    //data         
+    include_once ($level.data_path.'data.php');
+    include ($level.php_path.head_path.'head.php')
+?>
 <body>
     <?php 
         //<!-- Page Preloder -->
@@ -10,31 +13,28 @@
         include ($level.php_path.header_path.'header.php');
         //Breadcrumb Section
         include ($level.php_path.content_path.'breadcrumb-section.php');
-        //Product Shop
     ?>
-
-    <!-- Product Shop Section Begin -->
-    <?php
-        if($shop_page == true)
-        {?>
-        <section class="spad">
-            <div class="container">
-                <div class="row">
-                    <?php 
+    <section class="spad">
+        <div class="container">
+            <div class="row">
+                <?php
+                    //Product Shop
+                    if($shop_page == true)
+                    {
+                        include_once ($level.data_path.'shop_data.php');
                         include ($level.php_path.content_path.'produts-sidebar.php');
                         include ($level.php_path.content_path.'product-container.php');
-                    ?> 
-                </div>
-         </div>
-        </section>
-        <?php}
+                    } 
+                ?> 
+            </div>
+        </div>
+    </section>
+    <?php 
+        // Partner Logo Section
+        include_once ($level.php_path.content_path.'partner-logo.php');
+        include_once ($level.php_path.footer_path.'footer.php');
         
-    ?>
-    <!-- Partner Logo-->
-    <?php include_once ($level.php_path.content_path.'partner-logo.php');?>
-    <!-- Footer Section -->
-    <?php include_once ($level.php_path.footer_path.'footer.php');?>
-    <!-- Js Plugins -->
-    <?php include_once ($level.php_path.script_path.'script.php'); ?>
+    ?>                
+    <?php include ($level.php_path.script_path.'script.php');?>
 </body>
 </html>
