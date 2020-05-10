@@ -8,7 +8,7 @@
     $faq_page = false;
     $product_page = false;
     $register_page = false;
-    $shop_page =  true;
-    $shoppingcart_page = false;
+    $shop_page =  false;
+    $shoppingcart_page = true;
     include_once ($level.'layout.php');
 ?>

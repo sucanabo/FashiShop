@@ -12,6 +12,7 @@
     define('script_path','script/');
     define('content_path', 'content/');
     define('data_path', 'data/');
+    define('pages_path', 'pages/');
     
 
     

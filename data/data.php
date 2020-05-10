@@ -1,4 +1,4 @@
-<?php 
+<?php
     $partnerArr = array(
         'logo-carousel/logo-1.png',
         'logo-carousel/logo-2.png',

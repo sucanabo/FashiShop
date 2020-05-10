@@ -25,6 +25,12 @@
                         include ($level.php_path.content_path.'produts-sidebar.php');
                         include ($level.php_path.content_path.'product-container.php');
                     } 
+                    if($shoppingcart_page == true)
+                    {
+                        include_once ($level.data_path.'shoppingcart_data.php');
+                        include ($level.php_path.content_path.'cart-table.php');
+                        include ($level.php_path.content_path.'cart-pay.php');
+                    } 
                 ?> 
             </div>
         </div>
