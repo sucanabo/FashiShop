@@ -30,7 +30,16 @@
                         include_once ($level.data_path.'shoppingcart_data.php');
                         include ($level.php_path.content_path.'cart-table.php');
                         include ($level.php_path.content_path.'cart-pay.php');
-                    } 
+                    }
+                    if($blogdetail_page == true)
+                    {
+                        include_once ($level.php_path.content_path.'blog-details spad.php');
+                    }
+                    if($blog_page == true)
+                    {
+                        include_once ($level.php_path.content_path.'blog-sidebar.php');
+                        include_once ($level.php_path.content_path.'blog-right.php');
+                    }
                 ?> 
             </div>
         </div>
