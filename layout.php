@@ -44,6 +44,11 @@
                     {
                         include_once ($level.php_path.content_path.'checkout-form.php');
                     }
+                    if($contact_page == true)
+                    {
+                        include_once ($level.php_path.content_path.'contact-map-spad.php');
+                        include_once ($level.php_path.content_path.'contact-section-spad.php');
+                    }
                 ?> 
             </div>
         </div>
