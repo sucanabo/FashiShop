@@ -49,6 +49,10 @@
                         include_once ($level.php_path.content_path.'contact-map-spad.php');
                         include_once ($level.php_path.content_path.'contact-section-spad.php');
                     }
+                    if($faq_page == true)
+                    {
+                        include_once ($level.php_path.content_path.'faq_content.php');
+                    }
                 ?> 
             </div>
         </div>
