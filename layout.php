@@ -40,6 +40,10 @@
                         include_once ($level.php_path.content_path.'blog-sidebar.php');
                         include_once ($level.php_path.content_path.'blog-right.php');
                     }
+                    if($checkout_page == true)
+                    {
+                        include_once ($level.php_path.content_path.'checkout-form.php');
+                    }
                 ?> 
             </div>
         </div>
