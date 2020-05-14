@@ -18,6 +18,28 @@
         <div class="container">
             <div class="row">
                 <?php
+					if ($index_page == true){
+						include ($level.php_path.content_path.'index-banner.php');
+						include ($level.php_path.content_path.'index-deal.php');
+						include ($level.php_path.content_path.'index-section.php');
+						include ($level.php_path.content_path.'index-man-banner.php');
+						include ($level.php_path.content_path.'index-women-banner.php');
+						include ($level.php_path.content_path.'index-intargram.php');
+						include ($level.php_path.content_path.'index-latest-blog.php');
+					}
+					if ($login_page == true){
+						include ($level.php_path.content_path.'login-register.php');
+					}
+					if ($main_page == true){
+						include ($level.php_path.content_path.'main.php');
+					}
+					if  ($product_page == true){
+						include ($level.php_path.content_path.'product-section.php');
+						include ($level.php_path.content_path.'ptoduct-related.php');
+					}
+					if ($register_page == true){
+						include ($level.php_path.content_path.'register-register.php');
+					}
                     //Product Shop
                     if($shop_page == true)
                     {
