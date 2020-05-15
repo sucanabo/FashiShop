@@ -1,1 +1,0 @@
-<div class="sale pp-sale">Sale</div>

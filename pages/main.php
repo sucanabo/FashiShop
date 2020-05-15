@@ -7,7 +7,7 @@
     $contact_page = false;
     $faq_page = false;
 	$index_page = false;
-	$login _page = false;
+	$login_page = false;
 	$main_page = true;
     $product_page = false;
     $register_page = false;

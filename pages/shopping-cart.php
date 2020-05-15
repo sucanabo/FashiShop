@@ -10,5 +10,8 @@
     $register_page = false;
     $shop_page =  false;
     $shoppingcart_page = true;
+	$index_page = false;
+	$main_page = false;
+	$login_page = false;
     include_once ($level.'layout.php');
 ?>

@@ -19,11 +19,12 @@
             <div class="row">
                 <?php
 					if ($index_page == true){
-						include ($level.php_path.content_path.'index-banner.php');
-						include ($level.php_path.content_path.'index-deal.php');
+						
 						include ($level.php_path.content_path.'index-section.php');
-						include ($level.php_path.content_path.'index-man-banner.php');
+						include ($level.php_path.content_path.'index-banner.php');
 						include ($level.php_path.content_path.'index-women-banner.php');
+						include ($level.php_path.content_path.'index-deal.php');
+						include ($level.php_path.content_path.'index-man-banner.php');
 						include ($level.php_path.content_path.'index-intargram.php');
 						include ($level.php_path.content_path.'index-latest-blog.php');
 					}
@@ -35,7 +36,7 @@
 					}
 					if  ($product_page == true){
 						include ($level.php_path.content_path.'product-section.php');
-						include ($level.php_path.content_path.'ptoduct-related.php');
+						include ($level.php_path.content_path.'product-related.php');
 					}
 					if ($register_page == true){
 						include ($level.php_path.content_path.'register-register.php');
@@ -67,5 +68,6 @@
         
     ?>                
     <?php include ($level.php_path.script_path.'script.php');?>
+	
 </body>
 </html>
