@@ -1,4 +1,6 @@
-<div class="col-lg-3 col-md-6 col-sm-8 order-2 order-lg-1 produts-sidebar-filter">
+
+
+				<div class="col-lg-3 col-md-6 col-sm-8 order-2 order-lg-1 produts-sidebar-filter">
             
     <?php   
         //catagories
@@ -16,4 +18,5 @@
     ?>
 
     
-</div>
+				</div>
+			
