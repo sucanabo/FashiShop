@@ -14,9 +14,7 @@
         //Breadcrumb Section
         include ($level.php_path.content_path.'breadcrumb-section.php');
     ?>
-    <section class="spad">
-        <div class="container">
-            <div class="row">
+    
                 <?php
 					if ($index_page == true){
 						
@@ -58,9 +56,7 @@
                         include_once ($level.php_path.content_path.'blog-detail-title.php');
                     }
                 ?> 
-            </div>
-        </div>
-    </section>
+           
     <?php 
         // Partner Logo Section
         include_once ($level.php_path.content_path.'partner-logo.php');
