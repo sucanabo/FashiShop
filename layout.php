@@ -39,6 +39,12 @@
 					if ($register_page == true){
 						include ($level.php_path.content_path.'register-register.php');
 					}
+					?>
+					<section class="spad">
+        <div class="container">
+            <div class="row">
+					<?php
+	
                     //Product Shop
                     if($shop_page == true)
                     {
@@ -56,7 +62,9 @@
                         include_once ($level.php_path.content_path.'blog-detail-title.php');
                     }
                 ?> 
-           
+            </div>
+        </div>
+    </section>
     <?php 
         // Partner Logo Section
         include_once ($level.php_path.content_path.'partner-logo.php');
