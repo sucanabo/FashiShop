@@ -34,6 +34,7 @@
 					}
 					if  ($product_page == true){
 						include ($level.php_path.content_path.'product-section.php');
+						include ($level.php_path.content_path.'product-section2.php');
 						include ($level.php_path.content_path.'product-related.php');
 					}
 					if ($register_page == true){
