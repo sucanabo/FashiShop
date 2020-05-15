@@ -13,7 +13,7 @@
             </thead>
             <tbody>
                 <?php 
-                    foreach ($products as $key => $p) {
+                    foreach ($cart as $key => $p) {
                         ?>
                         <tr>
                             <td class="cart-pic first-row"><img src="<?php echo $level.img_path.$p['img']?>" alt=""></td>
