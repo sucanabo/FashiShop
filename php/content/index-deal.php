@@ -13,22 +13,17 @@
                     </div>
                 </div>
                 <div class="countdown-timer" id="countdown">
+				<?php
+				foreach ($deal as $b){
+				?>
                     <div class="cd-item">
-                        <span>56</span>
-                        <p>Days</p>
+                        <span><?php echo $b['so']?></span>
+                        <p><?php echo $b['ten']?></p>
                     </div>
-                    <div class="cd-item">
-                        <span>12</span>
-                        <p>Hrs</p>
-                    </div>
-                    <div class="cd-item">
-                        <span>40</span>
-                        <p>Mins</p>
-                    </div>
-                    <div class="cd-item">
-                        <span>52</span>
-                        <p>Secs</p>
-                    </div>
+					<?php
+				}
+				?>
+                   
                 </div>
                 <a href="<?php echo $level.pages_path.'shop.php'?>" class="primary-btn">Shop Now</a>
             </div>

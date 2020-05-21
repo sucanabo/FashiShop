@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php 
-//thu loi
+
     //data         
     include_once ($level.data_path.'data.php');
-    include ($level.php_path.head_path.'head.php')
+    include ($level.php_path.head_path.'head.php');
+	include($level.'DB.php');
 ?>
 <body>
     <?php 
@@ -18,7 +19,7 @@
     
                 <?php
 					if ($index_page == true){
-						
+						include_once ($level.data_path.'index_data.php');
 						include ($level.php_path.content_path.'index-section.php');
 						include ($level.php_path.content_path.'index-banner.php');
 						include ($level.php_path.content_path.'index-women-banner.php');
