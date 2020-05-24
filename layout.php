@@ -4,6 +4,7 @@
 //thu loi
     //data         
     include_once ($level.data_path.'data.php');
+    include_once ($level.'DB.php');
     include ($level.php_path.head_path.'head.php')
 ?>
 <body>
