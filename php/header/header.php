@@ -43,9 +43,9 @@
                     <div class="col-lg-7 col-md-7">
                         <div class="advanced-search">
                             <button type="button" class="category-btn">All Categories</button>
-                            <form action="#" class="input-group">
-                                <input type="text" placeholder="What do you need?">
-                                <button type="button"><i class="ti-search"></i></button>
+                            <form action="<?php echo $level.pages_path.'search.php'?>" method = "get" class="input-group">
+                                <input name="search" type="text" value="<?php if(isset($_GET['search'])){echo $_GET['search'];}?>"placeholder="What do you need?">
+                                <button type="submit" name="ok "value="search"><i class="ti-search"></i></button>
                             </form>
                         </div>
                     </div>

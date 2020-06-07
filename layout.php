@@ -64,6 +64,12 @@
                         include ($level.php_path.content_path.'cart-table.php');
                         include ($level.php_path.content_path.'cart-pay.php');
                     }
+                    //search
+                    if($search == true)
+                    {
+                        $lg12 = true;
+                        include ($level.php_path.content_path.'product-container.php');
+                    }
                 ?> 
             </div>
         </div>

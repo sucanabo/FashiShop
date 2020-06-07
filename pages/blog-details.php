@@ -1,6 +1,7 @@
 <?php 
     include_once ('../config.php');
     $level = lv1;
+    $search = false;
     $blogdetail_page = true;
     $blog_page = false;
     $checkout_page = false;
