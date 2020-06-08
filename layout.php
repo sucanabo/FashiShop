@@ -17,9 +17,7 @@
         include ($level.php_path.content_path.'breadcrumb-section.php');
     ?>
     
-	<section class="spad">
-        <div class="container">
-            <div class="row">
+	
 					<?php
                     //index
                     if ($index_page == true){
@@ -50,6 +48,12 @@
 					if ($register_page == true){
 						include ($level.php_path.content_path.'register-register.php');
 					}
+					?>
+					
+	<section class="spad">
+        <div class="container">
+            <div class="row">
+			<?php
                     //shop
                     if($shop_page == true)
                     {
