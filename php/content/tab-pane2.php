@@ -14,46 +14,20 @@
                                                     </div>
                                                 </td>
                                             </tr>
+											<?php
+											foreach($pane as $a)
+											{
+												?>
                                             <tr>
-                                                <td class="p-catagory">Price</td>
+                                                <td class="p-catagory"><?php echo $a['category']?></td>
                                                 <td>
-                                                    <div class="p-price">$495.00</div>
+                                                    <div class="p-price"><?php echo $a['tieude']?></div>
                                                 </td>
                                             </tr>
-                                            <tr>
-                                                <td class="p-catagory">Add To Cart</td>
-                                                <td>
-                                                    <div class="cart-add">+ add to cart</div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="p-catagory">Availability</td>
-                                                <td>
-                                                    <div class="p-stock">22 in stock</div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="p-catagory">Weight</td>
-                                                <td>
-                                                    <div class="p-weight">1,3kg</div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="p-catagory">Size</td>
-                                                <td>
-                                                    <div class="p-size">Xxl</div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="p-catagory">Color</td>
-                                                <td><span class="cs-color"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="p-catagory">Sku</td>
-                                                <td>
-                                                    <div class="p-code">00012</div>
-                                                </td>
-                                            </tr>
+											<?php
+											}
+											?>
+                                         
                                         </table>
                                     </div>
                                 </div>

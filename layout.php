@@ -4,8 +4,8 @@
 //thu loi
     //data         
     include_once ($level.data_path.'data.php');
-    include_once ($level.'DB.php');
-    include ($level.php_path.head_path.'head.php')
+    include ($level.php_path.head_path.'head.php');
+	 include_once ($level.'DB.php');
 ?>
 <body>
     <?php 
@@ -21,7 +21,7 @@
 					<?php
                     //index
                     if ($index_page == true){
-						
+						include_once ($level.data_path.'index_data.php');
 						include ($level.php_path.content_path.'index-section.php');
 						include ($level.php_path.content_path.'index-banner.php');
 						include ($level.php_path.content_path.'index-women-banner.php');
@@ -40,6 +40,7 @@
                     }
                     //procduct ( product-detail )
 					if  ($product_page == true){
+						include_once ($level.data_path.'product_data.php');
 						include ($level.php_path.content_path.'product-section.php');
 						include ($level.php_path.content_path.'product-section2.php');
 						include ($level.php_path.content_path.'product-related.php');
