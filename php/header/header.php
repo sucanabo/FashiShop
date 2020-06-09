@@ -15,9 +15,9 @@
                     <a href="#" class="login-panel"><i class="fa fa-user"></i>Login</a>
                     <div class="lan-selector">
                         <select class="language_drop" name="countries" id="countries" style="width:300px;">
-                            <option value='yt' data-image="../img/flag-1.jpg" data-imagecss="../flag yt"
+                            <option value='yt' data-image="<?php echo $level.img_path.'flag-1.jpg'?>" data-imagecss="../flag yt"
                                 data-title="English">English</option>
-                            <option value='yu' data-image="../img/flag-2.jpg" data-imagecss="../flag yu"
+                            <option value='yu' data-image="<?php echo $level.img_path.'flag-2.jpg'?>" data-imagecss="../flag yu"
                                 data-title="Bangladesh">German </option>
                         </select>
                     </div>
@@ -35,7 +35,11 @@
                 <div class="row">
                     <div class="col-lg-2 col-md-2">
                         <div class="logo">
+<<<<<<< HEAD
                             <a href="<?php echo $level.'index.php'?>">
+=======
+                            <a href="<?php echo $level.'index.php' ?>">
+>>>>>>> 3fbea22cd21ec1d48bd48d58c8c2dd71f4abb842
                                 <img src="<?php echo $level.img_path?>logo.png" alt="">
                             </a>
                         </div>
@@ -43,9 +47,9 @@
                     <div class="col-lg-7 col-md-7">
                         <div class="advanced-search">
                             <button type="button" class="category-btn">All Categories</button>
-                            <form action="#" class="input-group">
-                                <input type="text" placeholder="What do you need?">
-                                <button type="button"><i class="ti-search"></i></button>
+                            <form action="<?php echo $level.pages_path.'search.php'?>" method = "get" class="input-group">
+                                <input name="search" type="text" value="<?php if(isset($_GET['search'])){echo $_GET['search'];}?>"placeholder="What do you need?">
+                                <button type="submit" name="ok "value="search"><i class="ti-search"></i></button>
                             </form>
                         </div>
                     </div>
@@ -127,8 +131,13 @@
                 </div>
                 <nav class="nav-menu mobile-menu">
                     <ul>
+<<<<<<< HEAD
                         <li><a href="<?php echo $level.'index.php'?>">Home</a></li>
                         <li><a href="<?php echo $level.pages_path.'shop.php'?>">Shop</a></li>
+=======
+                        <li><a href="<?php echo $level.'index.php' ?>">Home</a></li>
+                        <li><a href="<?php echo $level.pages_path.'shop.php' ?>">Shop</a></li>
+>>>>>>> 3fbea22cd21ec1d48bd48d58c8c2dd71f4abb842
                         <li><a href="#">Collection</a>
                             <ul class="dropdown">
                                 <li><a href="#">Men's</a></li>
@@ -136,6 +145,7 @@
                                 <li><a href="#">Kid's</a></li>
                             </ul>
                         </li>
+<<<<<<< HEAD
                         <li><a href="<?php echo $level.pages_path.'blog.php'?>">Blog</a></li>
                         <li><a href="./contact.php">Contact</a></li>
                         <li><a href="#">Pages</a>
@@ -146,6 +156,18 @@
                                 <li><a href="<?php echo $level.pages_path.'faq.php'?>">Faq</a></li>
                                 <li><a href="<?php echo $level.pages_path.'register.php'?>">Register</a></li>
                                 <li><a href="<?php echo $level.pages_path.'login.php'?>">Login</a></li>
+=======
+                        <li><a href="<?php echo $level.pages_path.'blog.php' ?>">Blog</a></li>
+                        <li><a href="<?php echo $level.pages_path.'contact.php' ?>">Contact</a></li>
+                        <li><a href="#">Pages</a>
+                            <ul class="dropdown">
+                                <li><a href="<?php echo $level.pages_path.'blog-details.php' ?>">Blog Details</a></li>
+                                <li><a href="<?php echo $level.pages_path.'shopping-cart.php' ?>">Shopping Cart</a></li>
+                                <li><a href="<?php echo $level.pages_path.'check-out.php' ?>">Checkout</a></li>
+                                <li><a href="<?php echo $level.pages_path.'faq.php' ?>">Faq</a></li>
+                                <li><a href="<?php echo $level.pages_path.'register.php' ?>">Register</a></li>
+                                <li><a href="<?php echo $level.pages_path.'login.php' ?>">Login</a></li>
+>>>>>>> 3fbea22cd21ec1d48bd48d58c8c2dd71f4abb842
                             </ul>
                         </li>
                     </ul>
