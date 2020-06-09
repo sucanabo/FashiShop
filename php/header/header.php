@@ -35,11 +35,8 @@
                 <div class="row">
                     <div class="col-lg-2 col-md-2">
                         <div class="logo">
-<<<<<<< HEAD
                             <a href="<?php echo $level.'index.php'?>">
-=======
                             <a href="<?php echo $level.'index.php' ?>">
->>>>>>> 3fbea22cd21ec1d48bd48d58c8c2dd71f4abb842
                                 <img src="<?php echo $level.img_path?>logo.png" alt="">
                             </a>
                         </div>

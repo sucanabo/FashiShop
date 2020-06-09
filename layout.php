@@ -85,6 +85,7 @@
                     if($faq_page == true)
                     {
                         include_once ($level.php_path.content_path.'faq_content.php');
+                    }
                     //search
                     if($search == true)
                     {
