@@ -6,16 +6,13 @@
     $checkout_page = false;
     $contact_page = false;
     $faq_page = false;
-    $index_page = false;
-    $login_page = false;
-    $main_page =false;
-    $product_page = false;
-    $register_page = false;
-    $shop_page =  true;
-    $shoppingcart_page = false;
 	$index_page = false;
+	$login_page = false;
 	$main_page = false;
-    $login_page = false;
+    $product_page = false;
+    $register_page = true;
+    $shop_page =  false;
+    $shoppingcart_page = false;
     $search = false;
     include_once ($level.'layout.php');
 ?>
