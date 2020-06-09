@@ -128,13 +128,8 @@
                 </div>
                 <nav class="nav-menu mobile-menu">
                     <ul>
-<<<<<<< HEAD
-                        <li><a href="<?php echo $level.'index.php'?>">Home</a></li>
+                        <li class="active"><a href="<?php echo $level.'index.php'?>">Home</a></li>
                         <li><a href="<?php echo $level.pages_path.'shop.php'?>">Shop</a></li>
-=======
-                        <li><a href="<?php echo $level.'index.php' ?>">Home</a></li>
-                        <li><a href="<?php echo $level.pages_path.'shop.php' ?>">Shop</a></li>
->>>>>>> 3fbea22cd21ec1d48bd48d58c8c2dd71f4abb842
                         <li><a href="#">Collection</a>
                             <ul class="dropdown">
                                 <li><a href="#">Men's</a></li>
@@ -142,9 +137,8 @@
                                 <li><a href="#">Kid's</a></li>
                             </ul>
                         </li>
-<<<<<<< HEAD
                         <li><a href="<?php echo $level.pages_path.'blog.php'?>">Blog</a></li>
-                        <li><a href="./contact.php">Contact</a></li>
+                        <li><a href="<?php echo $level.pages_path.'contact.php'?>">Contact</a></li>
                         <li><a href="#">Pages</a>
                             <ul class="dropdown">
                                 <li><a href="<?php echo $level.pages_path.'blog-details.php'?>">Blog Details</a></li>
@@ -153,18 +147,6 @@
                                 <li><a href="<?php echo $level.pages_path.'faq.php'?>">Faq</a></li>
                                 <li><a href="<?php echo $level.pages_path.'register.php'?>">Register</a></li>
                                 <li><a href="<?php echo $level.pages_path.'login.php'?>">Login</a></li>
-=======
-                        <li><a href="<?php echo $level.pages_path.'blog.php' ?>">Blog</a></li>
-                        <li><a href="<?php echo $level.pages_path.'contact.php' ?>">Contact</a></li>
-                        <li><a href="#">Pages</a>
-                            <ul class="dropdown">
-                                <li><a href="<?php echo $level.pages_path.'blog-details.php' ?>">Blog Details</a></li>
-                                <li><a href="<?php echo $level.pages_path.'shopping-cart.php' ?>">Shopping Cart</a></li>
-                                <li><a href="<?php echo $level.pages_path.'check-out.php' ?>">Checkout</a></li>
-                                <li><a href="<?php echo $level.pages_path.'faq.php' ?>">Faq</a></li>
-                                <li><a href="<?php echo $level.pages_path.'register.php' ?>">Register</a></li>
-                                <li><a href="<?php echo $level.pages_path.'login.php' ?>">Login</a></li>
->>>>>>> 3fbea22cd21ec1d48bd48d58c8c2dd71f4abb842
                             </ul>
                         </li>
                     </ul>
