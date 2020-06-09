@@ -69,6 +69,34 @@
                         include ($level.php_path.content_path.'cart-table.php');
                         include ($level.php_path.content_path.'cart-pay.php');
                     }
+                    if($blogdetail_page == true)
+                    {
+                        include_once ($level.php_path.content_path.'blog-details spad.php');
+                    }
+                    if($blog_page == true)
+                    {
+                        include_once ($level.php_path.content_path.'blog-sidebar.php');
+                        include_once ($level.php_path.content_path.'blog-right.php');
+                    }
+                    if($checkout_page == true)
+                    {
+                        include_once ($level.php_path.content_path.'checkout-form.php');
+                    }
+                    if($contact_page == true)
+                    {
+                        include_once ($level.php_path.content_path.'contact-map-spad.php');
+                        include_once ($level.php_path.content_path.'contact-section-spad.php');
+                    }
+                    if($faq_page == true)
+                    {
+                        include_once ($level.php_path.content_path.'faq_content.php');
+                    }
+                    //search
+                    if($search == true)
+                    {
+                        $lg12 = true;
+                        include ($level.php_path.content_path.'product-container.php');
+                    }
                 ?> 
             </div>
         </div>

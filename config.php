@@ -1,7 +1,7 @@
 <?php 
     define('lv0', '');
     define('lv1', '../');
-    define('lv2', '../');
+    define('lv2', '../../');
     define('php_path', 'php/');
     define('img_path', 'img/');
     define('js_path', 'js/');
