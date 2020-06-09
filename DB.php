@@ -3,7 +3,7 @@
 		// Phương thức kết nối
 		private static function connect_DB() {
 			$host = 'localhost';
-			$dbname = 'mang';
+			$dbname = 'fashi_shop';
 			$us = 'root';
 			$pass = '';
 			try {

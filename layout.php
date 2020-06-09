@@ -4,8 +4,8 @@
 
     //data         
     include_once ($level.data_path.'data.php');
-    include ($level.php_path.head_path.'head.php');
-	include($level.'DB.php');
+    include_once ($level.'DB.php');
+    include ($level.php_path.head_path.'head.php')
 ?>
 <body>
     <?php 
@@ -17,9 +17,11 @@
         include ($level.php_path.content_path.'breadcrumb-section.php');
     ?>
     
-                <?php
-					if ($index_page == true){
-						include_once ($level.data_path.'index_data.php');
+
+	
+					<?php
+                    //index
+                    if ($index_page == true){
 						include ($level.php_path.content_path.'index-section.php');
 						include ($level.php_path.content_path.'index-banner.php');
 						include ($level.php_path.content_path.'index-women-banner.php');
@@ -27,42 +29,71 @@
 						include ($level.php_path.content_path.'index-man-banner.php');
 						include ($level.php_path.content_path.'index-intargram.php');
 						include ($level.php_path.content_path.'index-latest-blog.php');
-					}
+                    }
+                    //login
 					if ($login_page == true){
 						include ($level.php_path.content_path.'login-register.php');
-					}
+                    }
+                    //main
 					if ($main_page == true){
 						include ($level.php_path.content_path.'main.php');
-					}
+                    }
+                    //procduct ( product-detail )
 					if  ($product_page == true){
 						include ($level.php_path.content_path.'product-section.php');
 						include ($level.php_path.content_path.'product-section2.php');
 						include ($level.php_path.content_path.'product-related.php');
-					}
+                    }
+                    //register
 					if ($register_page == true){
 						include ($level.php_path.content_path.'register-register.php');
 					}
 					?>
-					<section class="spad">
+					
+	<section class="spad">
         <div class="container">
             <div class="row">
-					<?php
-	
-                    //Product Shop
+			<?php
+                    //shop
                     if($shop_page == true)
                     {
                         include_once ($level.data_path.'shop_data.php');
                         include ($level.php_path.content_path.'produts-sidebar.php');
                         include ($level.php_path.content_path.'product-container.php');
                     } 
+                    //cart
                     if($shoppingcart_page == true)
                     {
                         include_once ($level.data_path.'shoppingcart_data.php');
                         include ($level.php_path.content_path.'cart-table.php');
                         include ($level.php_path.content_path.'cart-pay.php');
                     }
-                    if($blogdetail_page == true){
-                        include_once ($level.php_path.content_path.'blog-detail-title.php');
+                    if($blogdetail_page == true)
+                    {
+                        include_once ($level.php_path.content_path.'blog-details spad.php');
+                    }
+                    if($blog_page == true)
+                    {
+                        include_once ($level.php_path.content_path.'blog-sidebar.php');
+                        include_once ($level.php_path.content_path.'blog-right.php');
+                    }
+                    if($checkout_page == true)
+                    {
+                        include_once ($level.php_path.content_path.'checkout-form.php');
+                    }
+                    if($contact_page == true)
+                    {
+                        include_once ($level.php_path.content_path.'contact-map-spad.php');
+                        include_once ($level.php_path.content_path.'contact-section-spad.php');
+                    }
+                    if($faq_page == true)
+                    {
+                        include_once ($level.php_path.content_path.'faq_content.php');
+                    //search
+                    if($search == true)
+                    {
+                        $lg12 = true;
+                        include ($level.php_path.content_path.'product-container.php');
                     }
                 ?> 
             </div>
