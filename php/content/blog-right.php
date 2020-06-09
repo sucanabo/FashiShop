@@ -3,7 +3,7 @@
                         <div class="col-lg-6 col-sm-6">
                             <div class="blog-item">
                                 <div class="bi-pic">
-                                    <img src="img/blog/blog-1.jpg" alt="">
+                                    <img src="<?php echo $level.img_path?>blog/blog-1.jpg" alt="">
                                 </div>
                                 <div class="bi-text">
                                     <a href="./blog-details.html">
@@ -16,7 +16,7 @@
                         <div class="col-lg-6 col-sm-6">
                             <div class="blog-item">
                                 <div class="bi-pic">
-                                    <img src="img/blog/blog-2.jpg" alt="">
+                                    <img src="<?php echo $level.img_path?>blog/blog-2.jpg" alt="">
                                 </div>
                                 <div class="bi-text">
                                     <a href="./blog-details.html">
@@ -29,7 +29,7 @@
                         <div class="col-lg-6 col-sm-6">
                             <div class="blog-item">
                                 <div class="bi-pic">
-                                    <img src="img/blog/blog-3.jpg" alt="">
+                                    <img src="<?php echo $level.img_path?>blog/blog-3.jpg" alt="">
                                 </div>
                                 <div class="bi-text">
                                     <a href="./blog-details.html">
@@ -42,7 +42,7 @@
                         <div class="col-lg-6 col-sm-6">
                             <div class="blog-item">
                                 <div class="bi-pic">
-                                    <img src="img/blog/blog-4.jpg" alt="">
+                                    <img src="<?php echo $level.img_path?>blog/blog-4.jpg" alt="">
                                 </div>
                                 <div class="bi-text">
                                     <a href="./blog-details.html">
@@ -55,7 +55,7 @@
                         <div class="col-lg-6 col-sm-6">
                             <div class="blog-item">
                                 <div class="bi-pic">
-                                    <img src="img/blog/blog-5.jpg" alt="">
+                                    <img src="<?php echo $level.img_path?>blog/blog-5.jpg" alt="">
                                 </div>
                                 <div class="bi-text">
                                     <a href="./blog-details.html">
@@ -68,7 +68,7 @@
                         <div class="col-lg-6 col-sm-6">
                             <div class="blog-item">
                                 <div class="bi-pic">
-                                    <img src="img/blog/blog-6.jpg" alt="">
+                                    <img src="<?php echo $level.img_path?>blog/blog-6.jpg" alt="">
                                 </div>
                                 <div class="bi-text">
                                     <a href="./blog-details.html">
@@ -78,6 +78,8 @@
                                 </div>
                             </div>
                         </div>
+                        
+                        
                         <div class="col-lg-12">
                             <div class="loading-more">
                                 <i class="icon_loading"></i>
