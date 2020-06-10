@@ -15,26 +15,32 @@
         include ($level.php_path.header_path.'header.php');
         //Breadcrumb Section
         include ($level.php_path.content_path.'breadcrumb-section.php');
-    ?>				
+    ?>			
+		<?php 
+			//index
+			if ($index_page == true){
+						
+				include ($level.php_path.content_path.'index-section.php');
+				include ($level.php_path.content_path.'index-banner.php');
+				include ($level.php_path.content_path.'index-women-banner.php');
+				include ($level.php_path.content_path.'index-deal.php');
+				include ($level.php_path.content_path.'index-man-banner.php');
+				include ($level.php_path.content_path.'index-intargram.php');
+				include ($level.php_path.content_path.'index-latest-blog.php');
+			}
+			//login
+			if ($login_page == true){
+				include ($level.php_path.content_path.'login-register.php');
+			}
+			//register
+			if ($register_page == true){
+				include ($level.php_path.content_path.'register-register.php');
+			}
+		?>	
 	<section class="spad">
         <div class="container">
             <div class="row">
 			<?php
-                //index
-                if ($index_page == true){
-                            
-                    include ($level.php_path.content_path.'index-section.php');
-                    include ($level.php_path.content_path.'index-banner.php');
-                    include ($level.php_path.content_path.'index-women-banner.php');
-                    include ($level.php_path.content_path.'index-deal.php');
-                    include ($level.php_path.content_path.'index-man-banner.php');
-                    include ($level.php_path.content_path.'index-intargram.php');
-                    include ($level.php_path.content_path.'index-latest-blog.php');
-                }
-                //login
-                if ($login_page == true){
-                    include ($level.php_path.content_path.'login-register.php');
-                }
                 //main
                 if ($main_page == true){
                     include ($level.php_path.content_path.'main.php');
@@ -45,13 +51,11 @@
                     include ($level.php_path.content_path.'product-section2.php');
                     include ($level.php_path.content_path.'product-related.php');
                 }
-                //register
-                if ($register_page == true){
-                    include ($level.php_path.content_path.'register-register.php');
-                }
+                
                 //shop
                 if($shop_page == true)
                 {
+					$lg12 = false;
                     include_once ($level.data_path.'shop_data.php');
                     include ($level.php_path.content_path.'produts-sidebar.php');
                     include ($level.php_path.content_path.'product-container.php');
