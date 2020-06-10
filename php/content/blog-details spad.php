@@ -1,28 +1,22 @@
 <section class="blog-details spad">
+        <?php foreach($blogdetail_data as $bld){ ?>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="blog-details-inner">
                         <div class="blog-detail-title">
-                            <h2>The Personality Trait That Makes People Happier</h2>
-                            <p>travel <span>- May 19, 2019</span></p>
+                            <h2><?php  echo $bld['text']  ?></h2>
+                            <p><?php  echo $bld['type']  ?> <span><?php  echo $bld['ngay']  ?></span></p>
                         </div>
                         <div class="blog-large-pic">
-                            <img src="../img/blog/blog-detail.jpg" alt="">
+                            <img src="<?php echo $level.img_path.blog.$bld['img'] ?>" alt="">
                         </div>
                         <div class="blog-detail-desc">
-                            <p>psum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure Lorem ipsum dolor sit
-                                amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.
+                            <p><?php  echo $bld['desc']  ?>
                             </p>
                         </div>
                         <div class="blog-quote">
-                            <p>“ Technology is nothing. What's important is that you have a faith in people, that
-                                they're basically good and smart, and if you give them tools, they'll do wonderful
-                                things with them.” <span>- Steven Jobs</span></p>
+                            <p><?php  echo $bld['quote']  ?></span></p>
                         </div>
                         <div class="blog-more">
                             <div class="row">
@@ -37,12 +31,7 @@
                                 </div>
                             </div>
                         </div>
-                        <p>Sum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi ut aliquip ex ea commodo consequat. Duis aute irure Lorem ipsum dolor sit amet,
-                            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                        <p><?php  echo $bld['desc']  ?></p>
                         <div class="tag-share">
                             <div class="details-tag">
                                 <ul>
@@ -125,4 +114,5 @@
                 </div>
             </div>
         </div>
+        <?php } ?>
     </section>

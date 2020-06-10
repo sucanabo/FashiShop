@@ -1,6 +1,9 @@
 <?php 
     include_once ('../config.php');
     $level = lv1;
+    include_once ($level.'DB.php');
+    $blogdetail_id = $_GET['id'];
+    $blogdetail_data = DP::run_query("SELECT * FROM blogdetail WHERE blogdetailid = ?",[$blogdetail_id],2);
     $search = false;
     $blogdetail_page = true;
     $blog_page = false;

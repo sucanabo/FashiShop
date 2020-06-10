@@ -1,6 +1,8 @@
 <?php 
     include_once ('../config.php');
     $level = lv1;
+    include_once ($level.'DB.php');
+    $blog_data = DP::run_query("SELECT * FROM blog",[],2);
     $search = false;
     $blogdetail_page =false;
     $blog_page = true;
