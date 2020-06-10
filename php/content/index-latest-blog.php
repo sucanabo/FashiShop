@@ -28,7 +28,7 @@
                                     <?php echo $a['comment']?>
                                 </div>
                             </div>
-                            <a href="#">
+                            <a href="<?php echo $level.pages_path.'detail.php?id='.$a['latestid'];?>">
                                 <h4><?php echo $a['tieude']?></h4>
                             </a>
                             <p><?php echo $a['gioithieu']?> </p>

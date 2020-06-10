@@ -58,6 +58,7 @@
                     //shop
                     if($shop_page == true)
                     {
+						$lg12 = false ;
                         include_once ($level.data_path.'shop_data.php');
                         include ($level.php_path.content_path.'produts-sidebar.php');
                         include ($level.php_path.content_path.'product-container.php');
@@ -71,8 +72,8 @@
                     }
                     if($blogdetail_page == true)
                     {
-                        include_once ($level.php_path.content_path.'blog-details spad.php');
-                    }
+						include_once ($level.php_path.content_path.'blog-details spad.php');
+					}
                     if($blog_page == true)
                     {
                         include_once ($level.php_path.content_path.'blog-sidebar.php');
@@ -97,6 +98,18 @@
                         $lg12 = true;
                         include ($level.php_path.content_path.'product-container.php');
                     }
+					//detail
+					if($detail == true)
+					{
+						include_once ($level.data_path.'detail_data.php');
+						include_once ($level.php_path.content_path.'lienquan.php');
+						include_once ($level.php_path.content_path.'details.php');
+						include_once ($level.php_path.content_path.'comment.php');
+						
+                    }
+					
+					
+					
                 ?> 
             </div>
         </div>
