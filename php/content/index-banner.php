@@ -11,7 +11,7 @@
                     <div class="single-banner">
                         <img src="<?php echo  $level.img_path.$a['img']?>" alt="">
                         <div class="inner-text">
-                            <h4><?php echo $a['tieude'];?></h4>
+                            <h4><?php echo $a['text'];?></h4>
                         </div>
                     </div>
                 </div>

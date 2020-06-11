@@ -9,7 +9,9 @@
                                     <div class="col-lg-4 col-sm-6">
                                         <div class="product-item">
                                             <div class="pi-pic">
+											<a href ="<?php echo $level.pages_path.'product.php?idproduct='.$pd['productid']; ?>">
                                                 <img src="<?php echo $level.img_path.$pd['img']; ?>" alt="">
+												</a>
                                                 <?php 
                                                     if($pd['sale-box'] == true)
                                                         include ($level.php_path.content_path.'sale-box.php');

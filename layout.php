@@ -21,6 +21,7 @@
 					<?php
                     //index
                     if ($index_page == true){
+						
 						include_once ($level.data_path.'index_data.php');
 						include ($level.php_path.content_path.'index-section.php');
 						include ($level.php_path.content_path.'index-banner.php');
@@ -34,17 +35,7 @@
 					if ($login_page == true){
 						include ($level.php_path.content_path.'login-register.php');
                     }
-                    //main
-					if ($main_page == true){
-						include ($level.php_path.content_path.'main.php');
-                    }
-                    //procduct ( product-detail )
-					if  ($product_page == true){
-						include_once ($level.data_path.'product_data.php');
-						include ($level.php_path.content_path.'product-section.php');
-						include ($level.php_path.content_path.'product-section2.php');
-						include ($level.php_path.content_path.'product-related.php');
-                    }
+                   
                     //register
 					if ($register_page == true){
 						include ($level.php_path.content_path.'register-register.php');
@@ -55,6 +46,18 @@
         <div class="container">
             <div class="row">
 			<?php
+					 //main
+					if ($main_page == true){
+						include ($level.php_path.content_path.'main.php');
+                    }
+                    //procduct ( product-detail )
+					if  ($product_page == true){
+						include_once ($level.data_path.'detail_data.php');
+						include_once ($level.data_path.'product_data.php');
+						include ($level.php_path.content_path.'product-section.php');
+						include ($level.php_path.content_path.'product-section2.php');
+						include ($level.php_path.content_path.'product-related.php');
+                    }
                     //shop
                     if($shop_page == true)
                     {
@@ -72,6 +75,7 @@
                     }
                     if($blogdetail_page == true)
                     {
+					
 						include_once ($level.php_path.content_path.'blog-details spad.php');
 					}
                     if($blog_page == true)
@@ -98,17 +102,7 @@
                         $lg12 = true;
                         include ($level.php_path.content_path.'product-container.php');
                     }
-					//detail
-					if($detail == true)
-					{
-						include_once ($level.data_path.'detail_data.php');
-						include_once ($level.php_path.content_path.'lienquan.php');
-						include_once ($level.php_path.content_path.'details.php');
-						include_once ($level.php_path.content_path.'comment.php');
-						
-                    }
-					
-					
+				
 					
                 ?> 
             </div>

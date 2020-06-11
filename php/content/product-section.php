@@ -20,6 +20,45 @@
                     
                 </div>
                 <div class="col-lg-9">
+
+				<?php
+				if($manbanner){
+				
+				foreach($manbanner as $a)
+				
+				{
+				?>
+                    <div class="row">
+                        <?php
+						 include_once($level.php_path.content_path.'product-thumbs.php');
+						?>
+                        <div class="col-lg-6">
+                            <div class="product-details">
+                                
+                               <?php
+							   include_once($level.php_path.content_path.'pd-title.php');
+							   include_once($level.php_path.content_path.'pd-rating.php');
+							   include_once($level.php_path.content_path.'pd-desc.php');
+							   include_once($level.php_path.content_path.'pd-color.php');
+							   include_once($level.php_path.content_path.'pd-size.php');
+							   include_once($level.php_path.content_path.'quantity.php');
+							   include_once($level.php_path.content_path.'pd-tag.php');
+							   include_once($level.php_path.content_path.'pd-share.php');
+					
+							   ?>
+                               
+                            </div>
+                        </div>
+                    </div>
+					<?php
+				}
+				}
+				 if($womenbanner){
+				
+				foreach($womenbanner as $a)
+				
+				{
+				?>
                     <div class="row">
                         <?php
 						 include_once($level.php_path.content_path.'product-thumbs.php');
@@ -42,6 +81,52 @@
                             </div>
                         </div>
                     </div>
+					<?php
+				}
+				
+				}
+				
+				 if($product){
+				
+				foreach($product as $a)
+				
+				{
+				?>
+                    <div class="row">
+                        <?php
+						 include_once($level.php_path.content_path.'product-thumbs.php');
+						?>
+                        <div class="col-lg-6">
+                            <div class="product-details">
+                                
+                               <?php
+							   include_once($level.php_path.content_path.'pd-title.php');
+							   include_once($level.php_path.content_path.'pd-rating.php');
+							   include_once($level.php_path.content_path.'pd-desc.php');
+							   include_once($level.php_path.content_path.'pd-color.php');
+							   include_once($level.php_path.content_path.'pd-size.php');
+							   include_once($level.php_path.content_path.'quantity.php');
+							   include_once($level.php_path.content_path.'pd-tag.php');
+								include_once($level.php_path.content_path.'pd-share.php');
+					
+							   ?>
+                               
+                            </div>
+                        </div>
+                    </div>
+					<?php
+				}
+				
+				}
+				?>
+			
+				
+				
+				
+				
+
+				
+					
 				
                   
          

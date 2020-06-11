@@ -18,37 +18,17 @@
                         </ul>
                     </div>
                     <div class="product-slider owl-carousel">
-                        <div class="product-item">
-                            <div class="pi-pic">
-                                <img src="<?php echo $level.img_path;?>products/women-1.jpg" alt="">
-                                <div class="sale">Sale</div>
-                                <div class="icon">
-                                    <i class="icon_heart_alt"></i>
-                                </div>
-                                <ul>
-                                    <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                    <li class="quick-view"><a href="#">+ Quick View</a></li>
-                                    <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="pi-text">
-                                <div class="catagory-name">Coat</div>
-                                <a href="#">
-                                    <h5>Pure Pineapple</h5>
-                                </a>
-                                <div class="product-price">
-                                    $14.00
-                                    <span>$35.00</span>
-                                </div>
-                            </div>
-                        </div>
 						<?php
+					
 						foreach($womenbanner as $a)
 						{
 							?>
                         <div class="product-item">
                             <div class="pi-pic">
+							<a href ="<?php echo $level.pages_path.'product.php?idwomen='.$a['womenbannerid']; ?>">
+							
                                 <img src="<?php echo $level.img_path.$a['img'];?>" alt="">
+								</a>
                                 <div class="icon">
                                     <i class="icon_heart_alt"></i>
                                 </div>
@@ -59,12 +39,13 @@
                                 </ul>
                             </div>
                             <div class="pi-text">
-                                <div class="catagory-name"><?php echo $a['loai']?></div>
+                                <div class="catagory-name"><?php echo $a['catagory']?></div>
                                 <a href="#">
-                                    <h5><?php echo $a['ten']?></h5>
+                                    <h5><?php echo $a['name']?></h5>
                                 </a>
                                 <div class="product-price">
-						<?php echo $a['gia']?>
+						<?php echo $a['price']?>
+										<span><?php echo $a['sale-price']?></span>
                                 </div>
                             </div>
                         </div>
@@ -77,4 +58,5 @@
             </div>
         </div>
     </section>
+	
     <!-- Women Banner Section End -->
