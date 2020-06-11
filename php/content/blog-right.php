@@ -10,10 +10,10 @@
                                     <img src="<?php echo $level.img_path.blog.$blog_data['img']?>" alt="">
                                 </div>
                                 <div class="bi-text">
-                                    <a href="<?php echo $level.pages_path.'blog-details.php'.'?id='.$blog_data['blogid'] ?>">
+                                    <a href="<?php echo $level.pages_path.'blog-details.php'.'?id='.$blog_data['blogdetailid'] ?>">
                                         <h4><?php echo $blog_data['text'] ?></h4>
                                     </a>
-                                    <p><?php echo $blog_data['type'] ?> <span><?php echo $blog_data['time'] ?></span></p>
+                                    <p><?php echo $blog_data['type'] ?> <span><?php echo $blog_data['ngay'] ?></span></p>
                                 </div>
                             </div>
                         </div>
