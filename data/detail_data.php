@@ -5,5 +5,5 @@ $womenbannerid = $_GET['idwomen'];
 $womenbanner = DP::run_query("SELECT * FROM `womenbanner` WHERE womenbannerid=?",[$womenbannerid],2);
 $productid = $_GET['idproduct'];
 $product = DP::run_query("SELECT * FROM `product` WHERE productid=?",[$productid],2);
-
+$binhluan = Dp::run_query("SELECT * FROM `binhluan` WHERE productid=?",[$productid],2);
 ?>
