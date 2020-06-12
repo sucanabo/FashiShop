@@ -41,8 +41,6 @@
         <div class="container">
             <div class="row">
 			<?php
-                
-                
                 //main
                 if ($main_page == true){
                     include ($level.php_path.content_path.'main.php');

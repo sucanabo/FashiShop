@@ -3,6 +3,7 @@
     $level = lv1;
     $blogdetail_page =false;
     $blog_page = false;
+    $lg12 = false;
     $checkout_page = false;
     $contact_page = false;
     $faq_page = false;
