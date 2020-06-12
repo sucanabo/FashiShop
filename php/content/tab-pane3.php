@@ -18,8 +18,8 @@
                                                         <i class="fa fa-star"></i>
                                                         <i class="fa fa-star-o"></i>
                                                     </div>
-                                                    <h5><?php echo $a['tgia']?> <span>27 Aug 2019</span></h5>
-                                                    <div class="at-reply"><?php echo $a['ndung'];?></div>
+                                                    <h5><?php echo $a['tacgia']?> <span>27 Aug 2019</span></h5>
+                                                    <div class="at-reply"><?php echo $a['noidung'];?></div>
                                                 </div>
                                             </div>
                                             
@@ -42,13 +42,13 @@
                                             <form action="<?php echo $level.data_path.'addcomment.php';?>" method ="get" class="comment-form">
                                                 <div class="row">
                                                     <div class="col-lg-6">
-                                                        <input type="text"  name="tgia" placeholder="Name">
+                                                        <input type="text"  name="tacgia" placeholder="Name">
                                                     </div>
                                                     <div class="col-lg-6">
                                                         <input type="text" name="email" placeholder="Email">
                                                     </div>
                                                     <div class="col-lg-12">
-                                                        <input type="textarea" name="ndung" placeholder="Messages"></textarea>
+                                                        <input type="textarea" name="noidung" placeholder="Messages"></textarea>
 								
 														<input type="textarea" name="productid" hidden ="true" value="<?php echo $product[0]['productid'];?>">
                                                         <button type="submit" class="site-btn">Send message</button>

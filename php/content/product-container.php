@@ -13,7 +13,7 @@
                                                 <img src="<?php echo $level.img_path.$pd['img']; ?>" alt="">
 												</a>
                                                 <?php 
-                                                    if($pd['sale-box'] == true)
+                                                    if($pd['salebox'] == true)
                                                         include ($level.php_path.content_path.'sale-box.php');
                                                 ?>
                                                 <div class="icon">
@@ -26,13 +26,13 @@
                                                 </ul>
                                             </div>
                                             <div class="pi-text">
-                                                <div class="catagory-name"><?php echo $pd['catagory'];?></div>
+                                                <div class="catagory-name"><?php echo $pd['ctname'];?></div>
                                                 <a href="#">
-                                                    <h5><?php echo $pd['name'];?></h5>
+                                                    <h5><?php echo $pd['prname'];?></h5>
                                                 </a>
                                                 <div class="product-price">
-                                                <?php echo $pd['price'];?>
-                                                    <span><?php echo $pd['sale-price'];?></span>
+                                                <?php echo '$'.$pd['price'];?>
+                                                    <span><?php echo '$'.$pd['saleprice'];?></span>
                                                 </div>
                                             </div>
                                         </div>

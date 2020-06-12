@@ -34,13 +34,13 @@
                                 </ul>
                             </div>
                             <div class="pi-text">
-                                <div class="catagory-name"><?php echo $a['catagory']?></div>
+                                <div class="catagory-name"><?php echo $a['ctname']?></div>
                                 <a href="#">
-                                    <h5><?php echo $a['name']?></h5>
+                                    <h5><?php echo $a['prname']?></h5>
                                 </a>
                                 <div class="product-price">
-                                    <?php echo $a['price']?>
-										<span><?php echo $a['sale-price']?></span>
+                                    <?php echo '$'.$a['price']?>
+										<span><?php echo '$'.$a['saleprice']?></span>
                                 </div>
                             </div>
                         </div>
