@@ -14,5 +14,6 @@
 	$index_page = false;
 	$main_page = false;
 	$login_page = false;
+	$search = false;
     include_once ($level.'layout.php');
 ?>

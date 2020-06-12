@@ -20,6 +20,13 @@
                     
                 </div>
                 <div class="col-lg-9">
+
+				<?php
+				
+				foreach($product as $a)
+				
+				{
+				?>
                     <div class="row">
                         <?php
 						 include_once($level.php_path.content_path.'product-thumbs.php');
@@ -35,13 +42,26 @@
 							   include_once($level.php_path.content_path.'pd-size.php');
 							   include_once($level.php_path.content_path.'quantity.php');
 							   include_once($level.php_path.content_path.'pd-tag.php');
-								include_once($level.php_path.content_path.'pd-share.php');
+							   include_once($level.php_path.content_path.'pd-share.php');
 					
 							   ?>
                                
                             </div>
                         </div>
                     </div>
+					<?php
+				}
+				
+				 
+				?>
+                    
+				
+				
+				
+				
+
+				
+					
 				
                   
          

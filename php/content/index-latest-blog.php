@@ -10,105 +10,58 @@
                 </div>
             </div>
             <div class="row">
+			<?php
+			foreach($latest1 as $a)
+			{
+				?>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-latest-blog">
-                        <img src="<?php echo $level.img_path;?>latest-1.jpg" alt="">
+                        <img src="<?php echo $level.img_path.$a['img'];?>" alt="">
                         <div class="latest-text">
                             <div class="tag-list">
                                 <div class="tag-item">
                                     <i class="fa fa-calendar-o"></i>
-                                    May 4,2019
+                                    <?php echo $a['ngaydang']?>
                                 </div>
                                 <div class="tag-item">
                                     <i class="fa fa-comment-o"></i>
-                                    5
+                                    <?php echo $a['comment']?>
                                 </div>
                             </div>
                             <a href="#">
-                                <h4>The Best Street Style From London Fashion Week</h4>
+                                <h4><?php echo $a['tieude']?></h4>
                             </a>
-                            <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
+                            <p><?php echo $a['gioithieu']?> </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-latest-blog">
-                        <img src="<?php echo $level.img_path;?>latest-2.jpg" alt="">
-                        <div class="latest-text">
-                            <div class="tag-list">
-                                <div class="tag-item">
-                                    <i class="fa fa-calendar-o"></i>
-                                    May 4,2019
-                                </div>
-                                <div class="tag-item">
-                                    <i class="fa fa-comment-o"></i>
-                                    5
-                                </div>
-                            </div>
-                            <a href="#">
-                                <h4>Vogue's Ultimate Guide To Autumn/Winter 2019 Shoes</h4>
-                            </a>
-                            <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-latest-blog">
-                        <img src="<?php echo $level.img_path;?>latest-3.jpg" alt="">
-                        <div class="latest-text">
-                            <div class="tag-list">
-                                <div class="tag-item">
-                                    <i class="fa fa-calendar-o"></i>
-                                    May 4,2019
-                                </div>
-                                <div class="tag-item">
-                                    <i class="fa fa-comment-o"></i>
-                                    5
-                                </div>
-                            </div>
-                            <a href="#">
-                                <h4>How To Brighten Your Wardrobe With A Dash Of Lime</h4>
-                            </a>
-                            <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
-                        </div>
-                    </div>
-                </div>
+				<?php
+			}
+			?>
+                
             </div>
             <div class="benefit-items">
                 <div class="row">
+				<?php
+				foreach($latest2 as $a)
+				{
+					?>
+					
                     <div class="col-lg-4">
                         <div class="single-benefit">
                             <div class="sb-icon">
-                                <img src="<?php echo $level.img_path;?>icon-1.png" alt="">
+                                <img src="<?php echo $level.img_path.$a['img'];?>" alt="">
                             </div>
                             <div class="sb-text">
-                                <h6>Free Shipping</h6>
-                                <p>For all order over 99$</p>
+                                <h6><?php echo $a['tieude']?></h6>
+                                <p><?php echo $a['gioithieu']?></p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="single-benefit">
-                            <div class="sb-icon">
-                                <img src="<?php echo $level.img_path;?>icon-2.png" alt="">
-                            </div>
-                            <div class="sb-text">
-                                <h6>Delivery On Time</h6>
-                                <p>If good have prolems</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="single-benefit">
-                            <div class="sb-icon">
-                                <img src="<?php echo $level.img_path;?>icon-1.png" alt="">
-                            </div>
-                            <div class="sb-text">
-                                <h6>Secure Payment</h6>
-                                <p>100% secure payment</p>
-                            </div>
-                        </div>
-                    </div>
+				<?php 
+				}
+				?>
+                    
                 </div>
             </div>
         </div>

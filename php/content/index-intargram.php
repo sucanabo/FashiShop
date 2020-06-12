@@ -1,41 +1,19 @@
 
     <!-- Instagram Section Begin -->
     <div class="instagram-photo">
-        <div class="insta-item set-bg" data-setbg="<?php echo $level.img_path;?>insta-1.jpg">
+	<?php
+	foreach($insta as $a)
+	{
+		?>
+        <div class="insta-item set-bg" data-setbg="<?php echo $level.img_path.$a['img'];?>">
             <div class="inside-text">
                 <i class="ti-instagram"></i>
-                <h5><a href="#">colorlib_Collection</a></h5>
+                <h5><a href="#"><?php echo $a['title']?></a></h5>
             </div>
         </div>
-        <div class="insta-item set-bg" data-setbg="<?php echo $level.img_path;?>insta-2.jpg">
-            <div class="inside-text">
-                <i class="ti-instagram"></i>
-                <h5><a href="#">colorlib_Collection</a></h5>
-            </div>
-        </div>
-        <div class="insta-item set-bg" data-setbg="<?php echo $level.img_path;?>insta-3.jpg">
-            <div class="inside-text">
-                <i class="ti-instagram"></i>
-                <h5><a href="#">colorlib_Collection</a></h5>
-            </div>
-        </div>
-        <div class="insta-item set-bg" data-setbg="<?php echo $level.img_path;?>insta-4.jpg">
-            <div class="inside-text">
-                <i class="ti-instagram"></i>
-                <h5><a href="#">colorlib_Collection</a></h5>
-            </div>
-        </div>
-        <div class="insta-item set-bg" data-setbg="<?php echo $level.img_path;?>insta-5.jpg">
-            <div class="inside-text">
-                <i class="ti-instagram"></i>
-                <h5><a href="#">colorlib_Collection</a></h5>
-            </div>
-        </div>
-        <div class="insta-item set-bg" data-setbg="<?php echo $level.img_path;?>insta-6.jpg">
-            <div class="inside-text">
-                <i class="ti-instagram"></i>
-                <h5><a href="#">colorlib_Collection</a></h5>
-            </div>
-        </div>
+       
+	<?php
+	}
+	?>
     </div>
     <!-- Instagram Section End -->

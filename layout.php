@@ -4,8 +4,8 @@
 //thu loi
     //data         
     include_once ($level.data_path.'data.php');
-    include_once ($level.'DB.php');
-    include ($level.php_path.head_path.'head.php')
+    include ($level.php_path.head_path.'head.php');
+	 include_once ($level.'DB.php');
 ?>
 <body>
     <?php 
@@ -15,28 +15,31 @@
         include ($level.php_path.header_path.'header.php');
         //Breadcrumb Section
         include ($level.php_path.content_path.'breadcrumb-section.php');
-    ?>			
-    <?php 
-        //index
-        if ($index_page == true){
-                            
-            include ($level.php_path.content_path.'index-section.php');
-            include ($level.php_path.content_path.'index-banner.php');
-            include ($level.php_path.content_path.'index-women-banner.php');
-            include ($level.php_path.content_path.'index-deal.php');
-            include ($level.php_path.content_path.'index-man-banner.php');
-            include ($level.php_path.content_path.'index-intargram.php');
-            include ($level.php_path.content_path.'index-latest-blog.php');
-        }
-         //register
-         if ($register_page == true){
-            include ($level.php_path.content_path.'register-register.php');
-        }
-        //login
-        if ($login_page == true){
-            include ($level.php_path.content_path.'login-register.php');
-        }
-    ?>	
+    ?>
+					<?php
+                    //index
+                    if ($index_page == true){
+						
+						include_once ($level.data_path.'index_data.php');
+						include ($level.php_path.content_path.'index-section.php');
+						include ($level.php_path.content_path.'index-banner.php');
+						include ($level.php_path.content_path.'index-women-banner.php');
+						include ($level.php_path.content_path.'index-deal.php');
+						include ($level.php_path.content_path.'index-man-banner.php');
+						include ($level.php_path.content_path.'index-intargram.php');
+						include ($level.php_path.content_path.'index-latest-blog.php');
+                    }
+                    //login
+					if ($login_page == true){
+						include ($level.php_path.content_path.'login-register.php');
+                    }
+                   
+                    //register
+					if ($register_page == true){
+						include ($level.php_path.content_path.'register-register.php');
+					}
+					?>
+    ?>
 	<section class="spad">
         <div class="container">
             <div class="row">
