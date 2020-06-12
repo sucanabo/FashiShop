@@ -57,7 +57,7 @@
                                     <span>1</span>
                                 </a>
                             </li>
-                            <li class="cart-icon"><a href="#">
+                            <li class="cart-icon"><a href="<?php echo $level.pages_path.'shopping-cart.php' ?>">
                                     <i class="icon_bag_alt"></i>
                                     <span>3</span>
                                 </a>
