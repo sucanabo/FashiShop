@@ -5,7 +5,8 @@
     //data         
     include_once ($level.data_path.'data.php');
     include_once ($level.'DB.php');
-    include ($level.php_path.head_path.'head.php')
+    include ($level.php_path.head_path.'head.php');
+    $userid = 2;
 ?>
 <body>
     <?php 

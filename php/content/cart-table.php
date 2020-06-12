@@ -20,7 +20,7 @@
                             <td class="cart-title first-row">
                                 <h5><?php echo $p['name']?></h5>
                             </td>
-                            <td class="p-price first-row"><?php echo $p['p-price']?></td>
+                            <td class="p-price first-row"><?php echo $p['pprice']?></td>
                             <td class="qua-col first-row">
                                 <div class="quantity">
                                     <div class="pro-qty">
@@ -28,7 +28,7 @@
                                     </div>
                                 </div>
                             </td>
-                            <td class="total-price first-row"><?php echo $p['t-price']?></td>
+                            <td class="total-price first-row"><?php echo $p['tprice']?></td>
                             <td class="close-td first-row"><i class="ti-close"></i></td>
                         </tr>
                         <?php
