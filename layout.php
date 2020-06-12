@@ -41,8 +41,6 @@
         <div class="container">
             <div class="row">
 			<?php
-                
-                
                 //main
                 if ($main_page == true){
                     include ($level.php_path.content_path.'main.php');
@@ -70,11 +68,13 @@
                 //blog-detail
                 if($blogdetail_page == true)
                 {
+                    include_once ($level.data_path.'blogdetail_data.php');
                     include_once ($level.php_path.content_path.'blog-details spad.php');
                 }
                 //blog
                 if($blog_page == true)
                 {
+                    include_once ($level.data_path.'blog_data.php');
                     include_once ($level.php_path.content_path.'blog-sidebar.php');
                     include_once ($level.php_path.content_path.'blog-right.php');
                 }
