@@ -18,7 +18,7 @@
                 <li class="subtotal">Subtotal <span>$240.00</span></li>
                 <li class="cart-total">Total <span>$240.00</span></li>
             </ul>
-            <a href="<?php echo $level.pages_path.'chec-out.php'?>" class="proceed-btn">PROCEED TO CHECK OUT</a>
+            <a href="<?php echo $level.pages_path.'check-out.php'?>" class="proceed-btn">PROCEED TO CHECK OUT</a>
         </div>
     </div>
 </div>

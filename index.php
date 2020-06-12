@@ -12,6 +12,7 @@
     $product_page = false;
     $register_page = false;
     $shop_page =  false;
+    $search = true;
     $shoppingcart_page = false;
 	$search = false;
     include_once ($level.'layout.php');

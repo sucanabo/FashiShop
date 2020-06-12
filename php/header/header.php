@@ -12,7 +12,7 @@
                     </div>
                 </div>
                 <div class="ht-right">
-                    <a href="#" class="login-panel"><i class="fa fa-user"></i>Login</a>
+                    <a href="<?php echo $level.pages_path.'login.php' ?>" class="login-panel"><i class="fa fa-user"></i>Login</a>
                     <div class="lan-selector">
                         <select class="language_drop" name="countries" id="countries" style="width:300px;">
                             <option value='yt' data-image="<?php echo $level.img_path.'flag-1.jpg'?>" data-imagecss="../flag yt"
@@ -57,7 +57,7 @@
                                     <span>1</span>
                                 </a>
                             </li>
-                            <li class="cart-icon"><a href="#">
+                            <li class="cart-icon"><a href="<?php echo $level.pages_path.'shopping-cart.php' ?>">
                                     <i class="icon_bag_alt"></i>
                                     <span>3</span>
                                 </a>
