@@ -4,8 +4,8 @@
 //thu loi
     //data         
     include_once ($level.data_path.'data.php');
+    include_once ($level.'DB.php');
     include ($level.php_path.head_path.'head.php');
-	 include_once ($level.'DB.php');
 ?>
 <body>
     <?php 
@@ -50,6 +50,7 @@
                 }
                 //procduct ( product-detail )
                 if  ($product_page == true){
+                    
                     include ($level.php_path.content_path.'product-section.php');
                     include ($level.php_path.content_path.'product-section2.php');
                     include ($level.php_path.content_path.'product-related.php');
@@ -84,6 +85,7 @@
                 //checkout
                 if($checkout_page == true)
                 {
+                    include_once ($level.data_path.'checkout_data.php');
                     include_once ($level.php_path.content_path.'checkout-form.php');
                 }
                 //contact

@@ -13,6 +13,7 @@
             </thead>
             <tbody>
                 <?php 
+                var_dump($cart);
                     foreach ($cart as $key => $p) {
                         ?>
                         <tr>
@@ -24,7 +25,7 @@
                             <td class="qua-col first-row">
                                 <div class="quantity">
                                     <div class="pro-qty">
-                                        <input type="text" value="1">
+                                        <input type="text" value="1" name ="quantity" >
                                     </div>
                                 </div>
                             </td>
@@ -33,6 +34,7 @@
                         </tr>
                         <?php
                     }
+
                 ?>
             </tbody>
         </table>
