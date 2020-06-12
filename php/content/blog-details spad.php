@@ -6,13 +6,13 @@
                     <div class="blog-details-inner">
                         <div class="blog-detail-title">
                             <h2><?php  echo $bld['text']  ?></h2>
-                            <p><?php  echo $bld['type']  ?> <span><?php  echo $bld['ngay']  ?></span></p>
+                            <p><?php  echo $bld['type']  ?> <span><?php  echo $bld['date']  ?></span></p>
                         </div>
                         <div class="blog-large-pic">
                             <img src="<?php echo $level.img_path.blog.$bld['img'] ?>" alt="">
                         </div>
                         <div class="blog-detail-desc">
-                            <p><?php  echo $bld['desc']  ?>
+                            <p><?php  echo $bld['des']  ?>
                             </p>
                         </div>
                         <div class="blog-quote">
@@ -31,7 +31,7 @@
                                 </div>
                             </div>
                         </div>
-                        <p><?php  echo $bld['desc']  ?></p>
+                        <p><?php  echo $bld['des']  ?></p>
                         <div class="tag-share">
                             <div class="details-tag">
                                 <ul>
