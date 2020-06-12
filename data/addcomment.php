@@ -2,10 +2,10 @@
 include_once ('../config.php');
 $level = lv1 ;
 include_once('../DB.php');
-$name =$_GET['name'];
-$comment =$_GET['comment'];
+$tgia =$_GET['tgia'];
+$ndung =$_GET['ndung'];
 $email =$_GET['email'];
-$productid = $_GET['idproduct'];
-$result = DP::run_query( "Insert into binhluan (productid,email,name,comment) value(?,?,?,?)",[$productid,$email,$name,$comment],3 );
-header('location:'.$level.pages_path.'product.php?idproduct='.$productid);
+$productid = $_GET['productid'];
+$result = DP::run_query( "Insert into comment (productid,email,tgia,ndung) value(?,?,?,?)",[$productid,$email,$tgia,$ndung],3 );
+header('location:'.$level.pages_path.'product.php?productid='.$productid);
  ?>

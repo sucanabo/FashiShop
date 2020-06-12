@@ -1,9 +1,7 @@
 <?php
-$manbannerid = $_GET['idman'];
-$manbanner = DP::run_query("SELECT * FROM `manbanner` WHERE manbannerid=?",[$manbannerid],2);
-$womenbannerid = $_GET['idwomen'];
-$womenbanner = DP::run_query("SELECT * FROM `womenbanner` WHERE womenbannerid=?",[$womenbannerid],2);
-$productid = $_GET['idproduct'];
+$productid = $_GET['productid'];
+$women = DP::run_query("SELECT * FROM `product` WHERE productid=? limit 13,4",[$productid],2);
+$men = DP::run_query("SELECT * FROM `product` WHERE productid=? limit 9,4",[$productid],2);
 $product = DP::run_query("SELECT * FROM `product` WHERE productid=?",[$productid],2);
-$binhluan = Dp::run_query("SELECT * FROM `binhluan` WHERE productid=?",[$productid],2);
-?>
+$comment = DP::run_query("SELECT * FROM `comment` WHERE productid=?",[$productid],2);
+?> 

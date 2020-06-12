@@ -1,3 +1,3 @@
 <?php 
-    $product = DP::run_query("SELECT * FROM product",[],2);
+    $product = DP::run_query("SELECT * FROM product limit 0,9",[],2);
 ?>  

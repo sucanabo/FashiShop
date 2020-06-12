@@ -16,12 +16,12 @@
                         
 						<?php
 					
-						foreach ($manbanner as $a)
+						foreach ($men as $a)
 						{
 							?>
                         <div class="product-item">
                             <div class="pi-pic">
-							<a href ="<?php echo $level.pages_path.'product.php?idman='.$a['manbannerid'];?>">
+							<a href ="<?php echo $level.pages_path.'product.php?productid='.$a['productid']?>">
                                 <img src="<?php echo $level.img_path.$a['img'];?>" alt="">
 								</a>
                                 <div class="icon">

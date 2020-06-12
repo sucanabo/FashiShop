@@ -9,7 +9,7 @@
                                     <div class="col-lg-4 col-sm-6">
                                         <div class="product-item">
                                             <div class="pi-pic">
-											<a href ="<?php echo $level.pages_path.'product.php?idproduct='.$pd['productid']; ?>">
+											<a href ="<?php echo $level.pages_path.'product.php?productid='.$pd['productid']; ?>">
                                                 <img src="<?php echo $level.img_path.$pd['img']; ?>" alt="">
 												</a>
                                                 <?php 
