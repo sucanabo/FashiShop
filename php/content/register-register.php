@@ -1,3 +1,4 @@
+
  <!-- Register Section Begin -->
     <div class="register-login-section spad">
         <div class="container">
@@ -5,18 +6,22 @@
                 <div class="col-lg-6 offset-lg-3">
                     <div class="register-form">
                         <h2>Register</h2>
-                        <form action="#">
+                        <form action="<?php echo $level.data_path.'addaccount.php'?>" method ="POST" >
                             <div class="group-input">
-                                <label for="username">Username or email address *</label>
-                                <input type="text" id="username">
+                                <label for="username">Username *</label>
+                                <input type="text" name="username" required>
+                            </div>
+                            <div class="group-input">
+                                <label for="email">Email address *</label>
+                                <input type="text" name="email" required>
                             </div>
                             <div class="group-input">
                                 <label for="pass">Password *</label>
-                                <input type="text" id="pass">
+                                <input type="password" name="password"  required name="password" >
                             </div>
                             <div class="group-input">
                                 <label for="con-pass">Confirm Password *</label>
-                                <input type="text" id="con-pass">
+                                <input type="password" name="con-password"  name ="cfpassword"required>
                             </div>
                             <button type="submit" class="site-btn register-btn">REGISTER</button>
                         </form>
