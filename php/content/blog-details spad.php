@@ -5,7 +5,7 @@
                 <div class="col-lg-12">
                     <div class="blog-details-inner">
                         <div class="blog-detail-title">
-                            <h2><?php  echo $bld['text']  ?></h2>
+                            <h2 name="id"><?php  echo $bld['text']  ?></h2>
                             <p><?php  echo $bld['type']  ?> <span><?php  echo $bld['date']  ?></span></p>
                         </div>
                         <div class="blog-large-pic">
@@ -93,18 +93,52 @@
                                     amodo</p>
                             </div>
                         </div>
+                        
+                                    <div class="customer-review-option">
+                                        <h4> Comments</h4>
+                                        <div class="comment-option">
+										<?php 
+										foreach($comment as $a)
+										{
+											?>
+                                            <div class="co-item">
+                                                <div class="avatar-pic">
+                                                    <img src="<?php echo $level.img_path;?>product-single/avatar-1.png" alt="">
+                                                </div>
+                                                <div class="avatar-text">
+                                                    <div class="at-rating">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star-o"></i>
+                                                    </div>
+                                                    <h5><?php echo $a['tacgia']?> <span>27 Aug 2019</span></h5>
+                                                    <div class="at-reply"><?php echo $a['noidung'];?></div>
+                                                </div>
+                                            </div>
+                                            
+										<?php
+										}
+										?>
+                                        </div>
+                                    </div>
+                        
+                                   
+                                    
                         <div class="leave-comment">
                             <h4>Leave A Comment</h4>
-                            <form action="#" class="comment-form">
+                            <form action="<?php echo $level.data_path.'addcommentblog.php'?>" method="get" class="comment-form">
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <input type="text" placeholder="Name">
+                                        <input type="text" name="tacgia" placeholder="Name">
                                     </div>
                                     <div class="col-lg-6">
-                                        <input type="text" placeholder="Email">
+                                        <input type="text" name="noidung" placeholder="Email">
                                     </div>
                                     <div class="col-lg-12">
-                                        <textarea placeholder="Messages"></textarea>
+                                    <input type="textarea" name="blogid" hidden ="true" value="<?php echo $blogdetail_data[0]['blogid'];?>">
+                                        <input type="textarea" name="noidung" placeholder="Messages"></textarea>
                                         <button type="submit" class="site-btn">Send message</button>
                                     </div>
                                 </div>
@@ -114,5 +148,6 @@
                 </div>
             </div>
         </div>
+        
         <?php } ?>
     </section>

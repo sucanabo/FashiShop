@@ -2,7 +2,7 @@
     <div class="col-lg-4">
         <div class="cart-buttons">
             <a href="<?php echo $level.pages_path.'shop.php'?>" class="primary-btn continue-shop">Continue shopping</a>
-            <a href="<?php echo $level.data_path.'updatecart_func.php' ?>" class="primary-btn up-cart">Update cart</a>
+            <a href="#" class="primary-btn up-cart">Update cart</a>
         </div>
         <div class="discount-coupon">
             <h6>Discount Codes</h6>

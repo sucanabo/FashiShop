@@ -63,18 +63,11 @@
                             <div class="order-total">
                                 <ul class="order-table">
                                     <li>Product <span>Total</span></li>
-                                    <?php 
-                                        $total = 0;
-                                        foreach ($chkdata as $chk){
-                                    ?>
-                                    <li class="fw-normal"><?php echo $chk['name'].'x 1' ?> <span><?php echo '$'.$chk['tprice'] ?></span></li>
-                                    
-                                    <?php
-                                        $total = $total + (int)$chk['tprice'];
-                                        }
-                                        
-                                    ?>
-                                    <li class="total-price">Total <span><?php echo '$'.$total.'.00'  ?></span></li>
+                                    <li class="fw-normal">Combination x 1 <span>$60.00</span></li>
+                                    <li class="fw-normal">Combination x 1 <span>$60.00</span></li>
+                                    <li class="fw-normal">Combination x 1 <span>$120.00</span></li>
+                                    <li class="fw-normal">Subtotal <span>$240.00</span></li>
+                                    <li class="total-price">Total <span>$240.00</span></li>
                                 </ul>
                                 <div class="payment-check">
                                     <div class="pc-item">
