@@ -47,7 +47,11 @@
                                 </a>
                                 <div class="product-price">
 						<?php echo '$'.$a['price']?>
-										<span><?php echo '$'.$a['saleprice']?></span>
+                                        <span><?php if($a['saleprice']!=NULL)
+                                        { 
+                                            echo '$'.$a['saleprice'];
+                                        }
+                                         ?></span>
                                 </div>
                             </div>
                         </div>

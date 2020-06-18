@@ -13,7 +13,7 @@
                                                 <img src="<?php echo $level.img_path.$pd['img']; ?>" alt="">
 												</a>
                                                 <?php 
-                                                    if($pd['salebox'] == true)
+                                                    if($pd['salebox'] != 'FALSE')
                                                         include ($level.php_path.content_path.'sale-box.php');
                                                 ?>
                                                 <div class="icon">

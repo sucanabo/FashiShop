@@ -8,7 +8,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" >
             <?php
                 foreach($related as $rl)
                 {
@@ -22,11 +22,7 @@
                             <div class="icon">
                                 <i class="icon_heart_alt"></i>
                             </div>
-                            <ul>
-                                <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                <li class="quick-view"><a href="#">+ Quick View </a></li>
-                                <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                            </ul>
+                            
                         </div>
                         <div class="pi-text">
                             <div class="catagory-name"><?php echo $rl['ctname']?></div>
@@ -35,7 +31,11 @@
                             </a>
                             <div class="product-price">
                             <?php echo '$'.$rl['price']?>
-                                <span><?php echo '$'.$rl['saleprice']?></span>
+                                <span><?php if($rl['saleprice']!=NULL)
+                                            {
+                                                echo '$'.$rl['saleprice'];
+                                            }
+                                                ?></span>
                             </div>
                         </div>
                     </div>

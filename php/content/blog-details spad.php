@@ -113,7 +113,11 @@
                                                         <i class="fa fa-star"></i>
                                                         <i class="fa fa-star-o"></i>
                                                     </div>
-                                                    <h5><?php echo $a['tacgia']?> <span>27 Aug 2019</span></h5>
+                                                    <h5><?php echo $a['tacgia']?> <span><?php
+                                                    $today = getdate();
+                                                    $date = $today['mday']."/".$today['mon']."/".$today['year'];
+                                                    echo $date;
+                                                    ?></span></h5>
                                                     <div class="at-reply"><?php echo $a['noidung'];?></div>
                                                 </div>
                                             </div>
