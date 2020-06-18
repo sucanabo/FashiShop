@@ -4,6 +4,7 @@
                     <div class="product-list">
                         <div class="row">
                             <?php 
+                            //tetst
                                 foreach($product as $pd){
                                     ?>
                                     <div class="col-lg-4 col-sm-6">
