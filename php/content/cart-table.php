@@ -13,7 +13,6 @@
             </thead>
             <tbody>
                 <?php 
-                var_dump($cart);
                     foreach ($cart as $key => $p) {
                         ?>
                         <tr>

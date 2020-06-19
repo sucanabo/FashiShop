@@ -39,7 +39,6 @@
 						include ($level.php_path.content_path.'register-register.php');
 					}
 					?>
-    ?>
 	<section class="spad">
         <div class="container">
             <div class="row">
