@@ -23,8 +23,7 @@
     }
     if($chkemail == 1)
     echo "Email da duoc sua dung";
-    //var_dump($checkusername);
-    //var_dump($_POST);
+
     if($password==$con_password && $chkusername == 0 && $chkemail ==0){
         $result = DP::run_query("insert into account(username,password,type,status,email) values(?,?,?,?,?) ",[$username,$password,4,1,$email],1);
         header ('location:'.$level.pages_path.'login.php');
