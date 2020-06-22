@@ -10,7 +10,7 @@
                                     <img src="<?php echo $level.img_path.blog.$bl['img']?>" alt="">
                                 </div>
                                 <div class="bi-text">
-                                    <a href="<?php echo $level.pages_path.'blog-details.php'.'?id='.$bl['blogid'] ?>">
+                                    <a href="<?php echo $level.pages_path.'blog-details.php?blogid='.$bl['blogid'] ?>">
                                         <h4><?php echo $bl['text'] ?></h4>
                                     </a>
                                     <p><?php echo $bl['type'] ?> <span><?php echo $bl['date'] ?></span></p>

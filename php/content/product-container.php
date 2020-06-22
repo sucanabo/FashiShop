@@ -4,6 +4,7 @@
                     <div class="product-list">
                         <div class="row">
                             <?php 
+                            //tetst
                                 foreach($product as $pd){
                                     ?>
                                     <div class="col-lg-4 col-sm-6">
@@ -13,14 +14,14 @@
                                                 <img src="<?php echo $level.img_path.$pd['img']; ?>" alt="">
 												</a>
                                                 <?php 
-                                                    if($pd['salebox'] == true)
+                                                    if($pd['salebox'] != 'FALSE')
                                                         include ($level.php_path.content_path.'sale-box.php');
                                                 ?>
                                                 <div class="icon">
                                                     <i class="icon_heart_alt"></i>
                                                 </div>
                                                 <ul>
-                                                    <li class="w-icon active"><a href="<?php echo $level.data_path.'addsp.php?id='.$pd['productid'] ?>"><i class="icon_bag_alt"></i></a></li>
+                                                    <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
                                                     <li class="quick-view"><a href="#">+ Quick View</a></li>
                                                     <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
                                                 </ul>

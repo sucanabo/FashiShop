@@ -8,7 +8,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" >
             <?php
                 foreach($related as $rl)
                 {
@@ -16,25 +16,26 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="product-item">
                         <div class="pi-pic">
+                        <a href ="<?php echo $level.pages_path.'product.php?productid='.$rl['productid']; ?>">
                             <img src="<?php echo $level.img_path.$rl['img'];?>" alt="">
                             <div class="sale">Sale</div>
                             <div class="icon">
                                 <i class="icon_heart_alt"></i>
                             </div>
-                            <ul>
-                                <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                <li class="quick-view"><a href="#"><?php echo $rl['view'];?></a></li>
-                                <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                            </ul>
+                            
                         </div>
                         <div class="pi-text">
-                            <div class="catagory-name">Coat</div>
+                            <div class="catagory-name"><?php echo $rl['ctname']?></div>
                             <a href="#">
-                                <h5>Pure Pineapple</h5>
+                                <h5><?php echo $rl['prname']?></h5>
                             </a>
                             <div class="product-price">
-                                $14.00
-                                <span>$35.00</span>
+                            <?php echo '$'.$rl['price']?>
+                                <span><?php if($rl['saleprice']!=NULL)
+                                            {
+                                                echo '$'.$rl['saleprice'];
+                                            }
+                                                ?></span>
                             </div>
                         </div>
                     </div>

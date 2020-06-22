@@ -20,7 +20,6 @@
                     
                 </div>
                 <div class="col-lg-9">
-
 				<?php
 				
 				foreach($product as $a)

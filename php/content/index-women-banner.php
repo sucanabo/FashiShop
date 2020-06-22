@@ -36,7 +36,7 @@
                                 </div>
                                 <ul>
                                     <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                    <li class="quick-view"><a href="#"><?php echo $a['view']?></a></li>
+                                    <li class="quick-view"><a href="#">+Quick View</a></li>
                                     <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
                                 </ul>
                             </div>
@@ -47,7 +47,11 @@
                                 </a>
                                 <div class="product-price">
 						<?php echo '$'.$a['price']?>
-										<span><?php echo '$'.$a['saleprice']?></span>
+                                        <span><?php if($a['saleprice']!=NULL)
+                                        { 
+                                            echo '$'.$a['saleprice'];
+                                        }
+                                         ?></span>
                                 </div>
                             </div>
                         </div>
