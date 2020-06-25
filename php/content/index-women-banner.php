@@ -1,5 +1,5 @@
- <!-- Women Banner Section Begin -->
-    <section class="women-banner spad">
+<!-- Women Banner Section Begin -->
+<section class="women-banner spad">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-3">
@@ -36,11 +36,7 @@
                                 </div>
                                 <ul>
                                     <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-<<<<<<< HEAD
-                                    <li class="quick-view"><a href="#">+ Quick View</a></li>
-=======
-                                    <li class="quick-view"><a href="#">+Quick View</a></li>
->>>>>>> 5c769c9452cdbcfaf7686f05a5d763cc665b95e4
+                                    <li class="quick-view"><a href="<?php echo $level.pages_path.'product.php?productid='.$a['productid']?>">+Quick View</a></li>
                                     <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
                                 </ul>
                             </div>
