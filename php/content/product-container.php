@@ -1,7 +1,26 @@
-
 <div class="<?php if($lg12 == true ){echo 'col-lg-12';} else echo 'col-lg-9';?> order-1 order-lg-2">
                     <?php include_once($level.php_path.content_path.'product-show-option.php'); ?>
                     <div class="product-list">
+                    <?php
+                    $checkcart=false;
+                    if(isset($_SESSION['cart']))
+                    {
+                        foreach($_SESSION['cart'] as $k)
+                        {
+                            if(isset($k))
+                            {
+                                $checkcart=true;
+                            }
+                        }
+                    }
+                    if ($checkcart ==false)
+                    {
+                        echo '<p>Ban khong co mon hang nao trong gio hang</p>';
+                    } else {
+                        $items = $_SESSION['cart'];
+                        echo '<p>Ban dang co <a href="cart.php">'.count($items).' mon hang trong gio hang</a></p>';
+                    }
+                ?>
                         <div class="row">
                             <?php 
                             //tetst

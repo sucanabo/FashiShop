@@ -3,24 +3,21 @@
     $level = lv1;
     include_once ($level.'DB.php');
     $username = $_POST['username'];
-    $password = $_POST['password'];
-    $checkusername = DP::run_query("select username from account",[],2);
-    $chkusername = 0;
-    $chkemail = 0;
-    foreach ($checkusername as $check){
-        if($check['username'] == $username)
-        $chkusername = 1;
+    $password = $_POST['pass'];
+    $listAcc = DP::run_query("select * from account",[],2);
+    $allowLogin = false;
+    foreach($listAcc as $acc){
+        if(($username == $acc["username"] || $username == $acc["email"]) && $password == $acc["password"] ){
+            $allowLogin =true;
+        }
     }
-    $checkemail = DP::run_query("select email from account",[],2);
-    foreach ($checkemail as $check){
-        if($check['email' ] == $username)
-        $chkemail = 1;
-    }
-    if($chkusername == 1 || $chkemail ==1){
+    if($allowLogin){
         header("location:".$level.'index.php');
+        echo "Login success.";
     }
     else
     {
+        echo "Login failed.";
         header("location:".$level.pages_path.'login.php');
     }
 ?>

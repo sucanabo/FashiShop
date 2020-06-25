@@ -1,4 +1,43 @@
+<?php
+session_start();
+var_dump($_POST);
+
+if(isset($_POST['submit']))
+{
+
+	foreach($_POST as $prid=>$soluong)
+	{
+		if( ($soluong == 0) and (is_numeric($soluong)))
+		{
+			unset ($_SESSION['cart'][$prid]);
+		}
+		elseif(($soluong > 0) and (is_numeric($soluong)))
+		{
+			$_SESSION['cart'][$prid]['soluong']=$soluong;
+		}
+		
+	}
+	//header("location:cart.php");
+}
+?>
+<?php
+$checkcart=false;
+$total=0;
+if(isset($_SESSION['cart']))
+{
+	foreach($_SESSION['cart'] as $k)
+	{
+		if(isset($k))
+		{
+			$checkcart=true;
+		}
+	}
+}
+if($checkcart== true)
+{	
+    ?>
 <div class="col-lg-12">
+<form action="<?php echo $level.data_path.'add_cart.php'?>">
     <div class="cart-table">
         <table>
             <thead>
@@ -12,6 +51,7 @@
                 </tr>
             </thead>
             <tbody>
+                
                 <?php 
                     foreach ($cart as $key => $p) {
                         ?>
@@ -34,6 +74,16 @@
                         <?php
                     }
                 ?>
+                
+                
             </tbody>
         </table>
     </div>
+    <?php		
+	}
+
+else
+	{
+		echo "Ban chua mua sp nao.";
+	}
+?>
