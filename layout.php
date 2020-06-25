@@ -4,8 +4,8 @@
 //thu loi
     //data         
     include_once ($level.data_path.'data.php');
-    include_once ($level.'DB.php');
     include ($level.php_path.head_path.'head.php');
+	 include_once ($level.'DB.php');
 ?>
 <body>
     <?php 
@@ -37,12 +37,19 @@
                     //register
 					if ($register_page == true){
 						include ($level.php_path.content_path.'register-register.php');
-					}
+                    }
 					?>
-    ?>
-	<section class="spad">
-        <div class="container">
-            <div class="row">
+                    <?php 
+                        if($index_page == false && $login_page == false && $register_page ==false)
+                        {
+                            ?>
+                                <section class="spad">
+                                    <div class="container">
+                                        <div class="row">
+                            <?php
+                        }
+                    ?>
+	
 			<?php
                 //main
                 if ($main_page == true){
@@ -105,10 +112,18 @@
                     $lg12 = true;
                     include ($level.php_path.content_path.'product-container.php');
                 }
-                ?> 
-            </div>
-        </div>
-    </section>
+                ?>
+                <?php 
+                        if($index_page == false && $login_page == false && $register_page ==false)
+                        {
+                            ?>
+                                </div>
+                            </div>
+                        </section>
+                            <?php
+                        }
+                    ?> 
+            
     <?php 
         // Partner Logo Section
         include_once ($level.php_path.content_path.'partner-logo.php');

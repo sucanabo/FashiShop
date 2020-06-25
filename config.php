@@ -1,6 +1,4 @@
 <?php 
-    //temp
-    $userid = 3;
     define('lv0', '');
     define('lv1', '../');
     define('lv2', '../../');
