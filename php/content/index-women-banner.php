@@ -35,7 +35,7 @@
                                     <i class="icon_heart_alt"></i>
                                 </div>
                                 <ul>
-                                    <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
+                                    <li class="w-icon active"><a href="<?php echo $level.data_path."add_cart.php?id=".$a['productid'] ?>"><i class="icon_bag_alt"></i></a></li>
                                     <li class="quick-view"><a href="<?php echo $level.pages_path.'product.php?productid='.$a['productid']?>">+Quick View</a></li>
                                     <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
                                 </ul>

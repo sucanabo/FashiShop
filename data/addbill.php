@@ -18,9 +18,12 @@
     foreach($_SESSION['cart'] as $productid=>$quantity)
     {
         $result = DP::run_query( "Insert into billdetail(id,productid,quantity) value(?,?,?)",[$idbillnow[0]['id'],$_SESSION['cart'][$productid]['productid'],$_SESSION['cart'][$productid]['quantity']],3 );
+        $temp = DP::run_query("select instock,unitsold from product where productid = ?",[$_SESSION['cart'][$productid]['productid']],2);
+        $instock = (int)($temp[0]['instock']) - $_SESSION['cart'][$productid]['quantity'];
+        $unitsold = (int)($temp[0]['unitsold']) + $_SESSION['cart'][$productid]['quantity'];
+        $result2 = DP::run_query("update product set instock = ?, unitsold = ? where productid = ?",[$instock,$unitsold,$_SESSION['cart'][$productid]['productid']],3);
     }
-    var_dump($_SESSION);
-    var_dump($result);
+
     unset($_SESSION['cart']);
     header("location:".$level."index.php");
 ?>
