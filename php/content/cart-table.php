@@ -1,4 +1,24 @@
 <?php
+if(isset($_POST['submit']))
+{
+
+	foreach($_POST as $productid=>$quantity)
+	{
+		if(($quantity == 0) and (is_numeric($quantity)))
+		{
+			unset ($_SESSION['cart'][$productid]);
+		}
+		else if(($quantity > 0) and (is_numeric($quantity)))
+		{
+			$_SESSION['cart'][$productid]['quantity']=$quantity;
+		}
+		
+    }
+    //var_dump($_POST);
+	//header("location".$level.pages_path."shopping-cart.php");
+}
+?>
+<?php
 $checkcart=false;
 $total=0;
 if(isset($_SESSION['cart']))
@@ -15,7 +35,7 @@ if($checkcart== true)
 {	
     ?>
 <div class="col-lg-12">
-<form action="<?php echo $level.pages_path.'shopping-cart.php'?>">
+<form action="<?php echo $level.pages_path.'shopping-cart.php'?>" method ="POST" >
     <div class="cart-table">
         <table>
             <thead>
@@ -42,7 +62,7 @@ if($checkcart== true)
                             <td class="qua-col first-row">
                                 <div class="quantity">
                                     <div class="pro-qty">
-                                        <input type="text" value="<?php echo $cartitem['quantity']?>">
+                                        <input type="text" name ="<?php echo $cartitem['productid']; ?>" size = '5' value="<?php echo $cartitem['quantity']?>">
                                     </div>
                                 </div>
                             </td>
@@ -59,21 +79,11 @@ if($checkcart== true)
             </tbody>
         </table>
     </div>
-    
-    <?php		
-	}
-
-else
-	{
-		echo "Ban chua mua sp nao.";
-    }
-    
-?>
-<div class="row">
+    <div class="row">
     <div class="col-lg-4">
         <div class="cart-buttons">
             <a href="<?php echo $level.pages_path.'shop.php'?>" class="primary-btn continue-shop">Continue shopping</a>
-            <input type = "submit" value = "Update cart" class="primary-btn up-cart"></input>
+            <input type = "submit" name ="submit" value = "Update cart" class="primary-btn up-cart"></input>
         </div>
         <div class="discount-coupon">
             <h6>Discount Codes</h6>
@@ -94,3 +104,13 @@ else
     </div>
 </div>
 </div>
+    
+    <?php		
+	}
+
+else
+	{
+		echo "Ban chua mua sp nao.";
+    }
+    
+?>

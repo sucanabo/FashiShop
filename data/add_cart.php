@@ -16,7 +16,6 @@
     {
         $_SESSION['cart'][$id]
         =array("productid"=>$id,"name"=>$name,"price"=>$price,"img"=>$img,"quantity"=>1); 
-
     }
     header("location:".$level.pages_path."shopping-cart.php")
 
