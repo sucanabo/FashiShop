@@ -58,7 +58,8 @@
                 }
                 //procduct ( product-detail )
                 if  ($product_page == true){
-                    
+                    include ($level.data_path.'detail_data.php');
+                    include ($level.data_path.'product_data.php');
                     include ($level.php_path.content_path.'product-section.php');
                     include ($level.php_path.content_path.'product-section2.php');
                     include ($level.php_path.content_path.'product-related.php');
