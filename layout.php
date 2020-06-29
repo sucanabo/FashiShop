@@ -74,10 +74,9 @@
                 //cart
                 if($shoppingcart_page == true)
                 {
-                    include ($level.data_path."session_cart.php");
-                    //include_once ($level.data_path.'shoppingcart_data.php');
+                    
                     include ($level.php_path.content_path.'cart-table.php');
-                    //include ($level.php_path.content_path.'cart-pay.php');
+                    
                 }
                 //blog-detail
                 if($blogdetail_page == true)
@@ -95,7 +94,7 @@
                 //checkout
                 if($checkout_page == true)
                 {
-                    // include_once ($level.data_path.'checkout_data.php');
+                    
                     include_once ($level.php_path.content_path.'checkout-form.php');
                 }
                 //contact

@@ -15,10 +15,10 @@
                     }
                     if ($checkcart ==false)
                     {
-                        echo '<p>Ban khong co mon hang nao trong gio hang</p>';
+                        echo '<p>You don\'t have any item in cart</p>';
                     } else {
                         $items = $_SESSION['cart'];
-                        echo '<p>Ban dang co <a href="cart.php">'.count($items).' mon hang trong gio hang</a></p>';
+                        echo '<p>You have <a href="cart.php">'.count($items).' item in cart</a></p>';
                     }
                 ?>
                         <div class="row">
