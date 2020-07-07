@@ -112,11 +112,12 @@
                 if($search == true)
                 {
                     $lg12 = true;
+                    include ($level.data_path.'search_data.php');
                     include ($level.php_path.content_path.'product-container.php');
                 }
                 if($profile_page == true)
                 {
-                    include($level.data_path.'profile_data.php');
+                    include ($level.data_path.'profile_data.php');
                     include ($level.php_path.content_path.'profile-content.php');
                 }
                 ?>
