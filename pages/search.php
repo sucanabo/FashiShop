@@ -23,6 +23,7 @@
     $register_page = false;
     $shop_page =  false;
     $shoppingcart_page = false;
+    $profile_page = false;
     include_once ($level.'layout.php');
     
 ?>

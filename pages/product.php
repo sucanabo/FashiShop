@@ -14,6 +14,6 @@
     $shop_page =  false;
     $shoppingcart_page = false;
     $search = false;
-	
+    $profile_page = false;
     include_once ($level.'layout.php');
 ?>

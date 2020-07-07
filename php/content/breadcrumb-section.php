@@ -30,6 +30,8 @@
                             echo 'Contact';
                         if($register_page == true)
                             echo 'Register';
+                        if($profile_page==true)
+                            echo 'Profile';
                 ?></span>
                 </div>
             </div>

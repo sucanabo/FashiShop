@@ -12,7 +12,7 @@
                     </div>
                 </div>
                 <div class="ht-right">
-                    <a href="<?php echo $level.pages_path.'login.php' ?>" class="login-panel"><i class="fa fa-user"></i>Login</a>
+                    <a href="<?php if ($isLogin == true) echo $level.pages_path.'profile.php';else echo $level.pages_path.'login.php'; ?>" class="login-panel"><i class="fa fa-user"></i><?php if ($isLogin == true) echo $accIndex[0]["name"]; else echo "Login";?></a>
                     <div class="lan-selector">
                         <select class="language_drop" name="countries" id="countries" style="width:300px;">
                             <option value='yt' data-image="<?php echo $level.img_path.'flag-1.jpg'?>" data-imagecss="../flag yt"
@@ -27,6 +27,15 @@
                         <a href="#"><i class="ti-linkedin"></i></a>
                         <a href="#"><i class="ti-pinterest"></i></a>
                     </div>
+                    <?php 
+                        if($isLogin == true)
+                            {
+                                ?>
+                            <div class= "logout"><a href="<?php echo $level.function_path.'logout.php'?>">, Logout</a></div>
+                            <?php 
+                            }
+                    ?>
+                    
                 </div>
             </div>
         </div>

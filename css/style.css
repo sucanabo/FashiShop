@@ -111,7 +111,6 @@ ol {
 /*---------------------
   Helper CSS
 -----------------------*/
-
 .section-title {
 	margin-bottom: 40px;
 	text-align: center;
@@ -396,7 +395,20 @@ ol {
 	margin-top: 15px;
 	margin-bottom: 13px;
 }
-
+.header-top .ht-right .logout{
+	float: right;
+    font-size: 13px;
+    padding-left: 15px;
+    margin-top: 20px;
+	margin-left: -15px;
+}
+.logout a{
+	color: #e7ab3c;
+}
+.logout a:hover{
+	color: #e7ab3c;
+	text-decoration: underline;
+}
 .header-top .ht-right .top-social {
 	float: right;
 	padding-right: 20px;
@@ -3599,22 +3611,22 @@ ol {
   Contact Section
 -----------------------*/
 
-.contact-section {
-	padding-top: 75px;
-	padding-bottom: 80px;
+.contact-section ,.profile-section {
+	padding-top: 75px !important;
+	padding-bottom: 80px !important	;
 }
 
-.contact-title {
+.contact-title .profile-title{
 	margin-bottom: 30px;
 }
 
-.contact-title h4 {
+.contact-title h4 , .profile-title h4{
 	color: #252525;
 	font-weight: 700;
 	margin-bottom: 16px;
 }
 
-.contact-widget .cw-item {
+.contact-widget .cw-item,.profile-widget .cw-item {
 	background: #ffffff;
 	margin-bottom: 11px;
 	-webkit-box-shadow: 0px 8px 35px 10px #E8E8E8;
@@ -3623,6 +3635,9 @@ ol {
 	padding-top: 15px;
 	padding-bottom: 15px;
 	border-radius: 10px;
+}
+.profile-widget .cw-item{
+	padding-right: 25px;
 }
 
 .contact-widget .cw-item .ci-icon {

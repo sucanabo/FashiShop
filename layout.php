@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php 
-//thu loi
-    //data         
-    include_once ($level.data_path.'data.php');
+//thu loi      
+
     include ($level.php_path.head_path.'head.php');
-     include_once ($level.'DB.php');
+    include_once ($level.'DB.php');
+    include_once ($level.data_path.'data.php');
      session_start();
 ?>
 <body>
@@ -113,6 +113,11 @@
                 {
                     $lg12 = true;
                     include ($level.php_path.content_path.'product-container.php');
+                }
+                if($profile_page == true)
+                {
+                    include($level.data_path.'profile_data.php');
+                    include ($level.php_path.content_path.'profile-content.php');
                 }
                 ?>
                 <?php 
