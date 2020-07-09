@@ -70,6 +70,7 @@
                                     <i class="icon_bag_alt"></i>
                                     <span><?php
                                         $check = false;
+                                        if(empty($_SESSION)==false){
                                         foreach($_SESSION['cart'] as $k)
                                         {
                                             if(isset($k))
@@ -84,6 +85,8 @@
                                             $items = $_SESSION['cart'];
                                             echo count($items);
                                         }
+                                    }
+                                    else echo '0'
                                     ?></span>
                                 </a>
                                 <div class="cart-hover">
@@ -91,25 +94,31 @@
                                         <table>
                                             <tbody>
                                                 <?php
+                                               
                                                 $total = 0;
-                                                foreach ($_SESSION['cart'] as $cartitem) {
-                                                ?>
-                                                <tr>
-                                                    <td class="si-pic"><img src="<?php $level.img_path.$cartitem['img']?>" alt=""></td>
-                                                    <td class="si-text">
-                                                        <div class="product-selected">
-                                                            <p><?php echo '$'.$cartitem['price'].' X '.$cartitem['quantity']?></p>
-                                                            <h6><?php echo $cartitem['name'] ?></h6>
-                                                        </div>
-                                                    </td> 
-                                                    <td class="si-close"><a href="<?php echo $level.data_path."delcart.php?id=".$cartitem['productid']?>">
-                                                        <i class="ti-close"></i>
-                                                    </td>
-                                                </tr>
-                                                <?php
-                                                        $total+=$cartitem['quantity']*$cartitem['price'];
+                                                if(empty($_SESSION)==false){
+                                                    foreach ($_SESSION['cart'] as $cartitem) {
+                                                    ?>
+                                                    <tr>
+                                                        <td class="si-pic"><img src="<?php $level.img_path.$cartitem['img']?>" alt=""></td>
+                                                        <td class="si-text">
+                                                            <div class="product-selected">
+                                                                <p><?php echo '$'.$cartitem['price'].' X '.$cartitem['quantity']?></p>
+                                                                <h6><?php echo $cartitem['name'] ?></h6>
+                                                            </div>
+                                                        </td> 
+                                                        <td class="si-close"><a href="<?php echo $level.data_path."delcart.php?id=".$cartitem['productid']?>">
+                                                            <i class="ti-close"></i>
+                                                        </td>
+                                                    </tr>
+                                                    <?php
+                                                            $total+=$cartitem['quantity']*$cartitem['price'];
                                                     }
                                                 ?>
+                                                <?php
+                                            }
+                                            
+                                            ?>
                                             </tbody>
                                         </table>
                                     </div>
