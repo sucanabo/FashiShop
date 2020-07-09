@@ -67,6 +67,7 @@
                 //shop
                 if($shop_page == true)
                 {
+                   
                     include_once ($level.data_path.'shop_data.php');
                     include ($level.php_path.content_path.'produts-sidebar.php');
                     include ($level.php_path.content_path.'product-container.php');

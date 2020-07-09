@@ -110,7 +110,7 @@ if($checkcart== true)
 
 else
 	{
-		echo "Ban chua mua sp nao.";
+		echo "You have not purchased any products!!";
     }
     
 ?>

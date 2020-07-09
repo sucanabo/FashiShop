@@ -61,53 +61,65 @@
                     </div>
                     <div class="col-lg-3 text-right col-md-3">
                         <ul class="nav-right">
-                            <li class="heart-icon"><a href="#">
+                            <!-- <li class="heart-icon"><a href="#">
                                     <i class="icon_heart_alt"></i>
                                     <span>1</span>
                                 </a>
-                            </li>
+                            </li> -->
                             <li class="cart-icon"><a href="<?php echo $level.pages_path.'shopping-cart.php' ?>">
                                     <i class="icon_bag_alt"></i>
-                                    <span>3</span>
+                                    <span><?php
+                                        $check = false;
+                                        foreach($_SESSION['cart'] as $k)
+                                        {
+                                            if(isset($k))
+                                            {
+                                                $check=true;
+                                            }
+                                        }
+                                        if($check==false){
+                                            echo '0';
+                                        }
+                                        else{
+                                            $items = $_SESSION['cart'];
+                                            echo count($items);
+                                        }
+                                    ?></span>
                                 </a>
                                 <div class="cart-hover">
                                     <div class="select-items">
                                         <table>
                                             <tbody>
+                                                <?php
+                                                $total = 0;
+                                                foreach ($_SESSION['cart'] as $cartitem) {
+                                                ?>
                                                 <tr>
-                                                    <td class="si-pic"><img src="<?php echo $level.img_path?>select-product-1.jpg" alt=""></td>
+                                                    <td class="si-pic"><img src="<?php $level.img_path.$cartitem['img']?>" alt=""></td>
                                                     <td class="si-text">
                                                         <div class="product-selected">
-                                                            <p>$60.00 x 1</p>
-                                                            <h6>Kabino Bedside Table</h6>
+                                                            <p><?php echo '$'.$cartitem['price'].' X '.$cartitem['quantity']?></p>
+                                                            <h6><?php echo $cartitem['name'] ?></h6>
                                                         </div>
-                                                    </td>
-                                                    <td class="si-close">
+                                                    </td> 
+                                                    <td class="si-close"><a href="<?php echo $level.data_path."delcart.php?id=".$cartitem['productid']?>">
                                                         <i class="ti-close"></i>
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <td class="si-pic"><img src="<?php echo $level.img_path?>select-product-2.jpg" alt=""></td>
-                                                    <td class="si-text">
-                                                        <div class="product-selected">
-                                                            <p>$60.00 x 1</p>
-                                                            <h6>Kabino Bedside Table</h6>
-                                                        </div>
-                                                    </td>
-                                                    <td class="si-close">
-                                                        <i class="ti-close"></i>
-                                                    </td>
-                                                </tr>
+                                                <?php
+                                                        $total+=$cartitem['quantity']*$cartitem['price'];
+                                                    }
+                                                ?>
                                             </tbody>
                                         </table>
                                     </div>
                                     <div class="select-total">
                                         <span>total:</span>
-                                        <h5>$120.00</h5>
+                                        <h5><?php echo '$'.$total ?></h5>
                                     </div>
                                     <div class="select-button">
-                                        <a href="#" class="primary-btn view-card">VIEW CARD</a>
-                                        <a href="#" class="primary-btn checkout-btn">CHECK OUT</a>
+                                        <a href="<?php echo $level.pages_path.'shopping-cart.php' ?>" class="primary-btn view-card">VIEW CARD</a>
+                                        <a href="<?php echo $level.pages_path.'check-out.php' ?>" class="primary-btn checkout-btn">CHECK OUT</a>
                                     </div>
                                 </div>
                             </li>

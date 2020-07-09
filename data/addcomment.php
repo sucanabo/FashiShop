@@ -2,10 +2,10 @@
 include_once ('../config.php');
 $level = lv1 ;
 include_once('../DB.php');
-$tacgia =$_GET['tacgia'];
-$noidung =$_GET['noidung'];
+$author =$_GET['author'];
+$cmt =$_GET['cmt'];
 $email =$_GET['email'];
 $productid = $_GET['productid'];
-$result = DP::run_query( "Insert into comment (productid,email,tacgia,noidung) value(?,?,?,?)",[$productid,$email,$tacgia,$noidung],3 );
+$result = DP::run_query( "Insert into comment (productid,email,author,cmt) value(?,?,?,?)",[$productid,$email,$author,$cmt],3 );
 header('location:'.$level.pages_path.'product.php?productid='.$productid);
  ?>

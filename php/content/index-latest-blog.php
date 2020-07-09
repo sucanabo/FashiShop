@@ -21,7 +21,7 @@
                             <div class="tag-list">
                                 <div class="tag-item">
                                     <i class="fa fa-calendar-o"></i>
-                                    <?php echo $a['ngaydang']?>
+                                    <?php echo $a['date']?>
                                 </div>
                                 <div class="tag-item">
                                     <i class="fa fa-comment-o"></i>
@@ -29,9 +29,9 @@
                                 </div>
                             </div>
                             <a href="#">
-                                <h4><?php echo $a['tieude']?></h4>
+                                <h4><?php echo $a['title']?></h4>
                             </a>
-                            <p><?php echo $a['gioithieu']?> </p>
+                            <p><?php echo $a['text']?> </p>
                         </div>
                     </div>
                 </div>
@@ -53,8 +53,8 @@
                                 <img src="<?php echo $level.img_path.$a['img'];?>" alt="">
                             </div>
                             <div class="sb-text">
-                                <h6><?php echo $a['tieude']?></h6>
-                                <p><?php echo $a['gioithieu']?></p>
+                                <h6><?php echo $a['title']?></h6>
+                                <p><?php echo $a['text']?></p>
                             </div>
                         </div>
                     </div>

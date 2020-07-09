@@ -7,13 +7,13 @@
         //catagories
         include_once ($level.php_path.content_path.'sidebar-catagories.php');
         //brand
-        include_once ($level.php_path.content_path.'sidebar-brand.php');
+        //include_once ($level.php_path.content_path.'sidebar-brand.php');
         //price
         include_once ($level.php_path.content_path.'sidebar-price.php');
         //filter
-        include_once ($level.php_path.content_path.'sidebar-filter.php');
+        //include_once ($level.php_path.content_path.'sidebar-filter.php');
         //size
-        include_once ($level.php_path.content_path.'sidebar-size.php');
+        //include_once ($level.php_path.content_path.'sidebar-size.php');
         //tags
         include_once ($level.php_path.content_path.'sidebar-tags.php');
     ?>
