@@ -14,8 +14,6 @@ if(isset($_POST['submit']))
 		}
 		
     }
-    //var_dump($_POST);
-	//header("location".$level.pages_path."shopping-cart.php");
 }
 ?>
 <?php
@@ -45,7 +43,7 @@ if($checkcart== true)
                     <th>Price</th>
                     <th>Quantity</th>
                     <th>Total</th>
-                    <th><i class="ti-close"></i></th>
+                    <th><a href="<?php echo $level.data_path."delcart.php?id=".'0'?>"><i class="ti-close"></i></a></th>
                 </tr>
             </thead>
             <tbody>
@@ -96,7 +94,6 @@ if($checkcart== true)
     <div class="col-lg-4 offset-lg-4">
         <div class="proceed-checkout">
             <ul>
-                <!-- <li class="subtotal">Subtotal <span>$240.00</span></li> -->
                 <li class="cart-total">Total <span><?php echo "$".$total ?></span></li>
             </ul>
             <a href="<?php echo $level.pages_path.'check-out.php'?>" class="proceed-btn">PROCEED TO CHECK OUT</a>
@@ -110,7 +107,7 @@ if($checkcart== true)
 
 else
 	{
-		echo "Ban chua mua sp nao.";
+		echo "You have not purchased any products!!";
     }
     
 ?>

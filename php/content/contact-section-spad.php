@@ -45,7 +45,7 @@
                             <form action="#" class="comment-form">
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <input type="text" placeholder="Your name">
+                                        <input type="text" name placeholder="Your name">
                                     </div>
                                     <div class="col-lg-6">
                                         <input type="text" placeholder="Your email">

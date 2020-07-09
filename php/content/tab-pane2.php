@@ -21,7 +21,7 @@
                                             <tr>
                                                 <td class="p-catagory"><?php echo $a['category']?></td>
                                                 <td>
-                                                    <div class="p-price"><?php echo $a['tieude']?></div>
+                                                    <div class="p-price"><?php echo $a['title']?></div>
                                                 </td>
                                             </tr>
 											<?php
