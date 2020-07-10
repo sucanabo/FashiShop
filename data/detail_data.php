@@ -1,6 +1,6 @@
 <?php
 $isAdmin = false;
-if($accIndex[0]["id"] < 4 == true)
+if($accIndex[0]["id"] == 1)
     $isAdmin = true;
 $productid = $_GET['productid'];
 $women = DP::run_query("SELECT * FROM `product` WHERE productid=? limit 13,4",[$productid],2);

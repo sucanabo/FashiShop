@@ -26,9 +26,17 @@
                                                     
                                                     <div class="at-reply"><?php echo $a['cmt'];?></div>
                                                 </div>
-                                                <div class="left">
-                                                    <button class = "site-btn approve-btn">Approve</button>
+                                                <?php
+                                                    if($accIndex[0]['type']==1){
+                                                ?>
+                                                <div class="delcmt-btn">
+                                                    <a href="<?php echo $level.function_path.'del-cmt.php?id='.$a['id'].'&productid='.$a['productid'] ?>"><i class="ti-close"></i></a>
                                                 </div>
+                                                <div class="approve-btn">
+                                                    <button class = "site-btn ">Approve</button>
+                                                </div><?php
+                                                    }
+                                                ?>
                                             </div>
                                             
 										<?php

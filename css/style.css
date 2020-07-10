@@ -2554,6 +2554,12 @@ ol {
 	right: 0;
 	top: 0;
 }
+.delcmt-btn i{
+	color: black;
+}
+.delcmt-btn i:hover{
+	color: red;
+}
 .customer-review-option .comment-option .co-item .avatar-pic {
 	float: left;
 	margin-right: 20px;
