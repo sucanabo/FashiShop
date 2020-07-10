@@ -2542,8 +2542,18 @@ ol {
 
 .customer-review-option .comment-option .co-item {
 	margin-bottom: 20px;
+	position: relative;
 }
-
+.approve-btn {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.delcmt-btn{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
 .customer-review-option .comment-option .co-item .avatar-pic {
 	float: left;
 	margin-right: 20px;

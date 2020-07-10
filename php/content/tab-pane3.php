@@ -23,7 +23,11 @@
                                                     $date = $today['mday']."/".$today['mon']."/".$today['year'];
                                                     echo $date;
                                                     ?></span></h5>
+                                                    
                                                     <div class="at-reply"><?php echo $a['cmt'];?></div>
+                                                </div>
+                                                <div class="left">
+                                                    <button class = "site-btn approve-btn">Approve</button>
                                                 </div>
                                             </div>
                                             
