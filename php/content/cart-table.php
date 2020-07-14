@@ -1,7 +1,7 @@
 <?php
 if(isset($_POST['submit']))
 {
-
+    var_dump($_POST);
 	foreach($_POST as $productid=>$quantity)
 	{
 		if(($quantity == 0) and (is_numeric($quantity)))
@@ -12,7 +12,6 @@ if(isset($_POST['submit']))
 		{
 			$_SESSION['cart'][$productid]['quantity']=$quantity;
 		}
-		
     }
 }
 ?>

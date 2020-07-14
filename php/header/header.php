@@ -4,7 +4,7 @@
                 <div class="ht-left">
                     <div class="mail-service">
                         <i class=" fa fa-envelope"></i>
-                        hello.colorlib@gmail.com
+                        sucanabo@gmail.com
                     </div>
                     <div class="phone-service">
                         <i class=" fa fa-phone"></i>
@@ -17,15 +17,12 @@
                         <select class="language_drop" name="countries" id="countries" style="width:300px;">
                             <option value='yt' data-image="<?php echo $level.img_path.'flag-1.jpg'?>" data-imagecss="../flag yt"
                                 data-title="English">English</option>
-                            <option value='yu' data-image="<?php echo $level.img_path.'flag-2.jpg'?>" data-imagecss="../flag yu"
-                                data-title="Bangladesh">German </option>
                         </select>
                     </div>
                     <div class="top-social">
-                        <a href="#"><i class="ti-facebook"></i></a>
-                        <a href="#"><i class="ti-twitter-alt"></i></a>
-                        <a href="#"><i class="ti-linkedin"></i></a>
-                        <a href="#"><i class="ti-pinterest"></i></a>
+                        <a href="https://www.facebook.com/sugar.up.9" taget = "_blank"><i class="ti-facebook"></i></a>
+                        <a href="https://twitter.com/home"><i class="ti-twitter-alt"></i></a>
+                        <a href="https://www.instagram.com/"><i class="ti-linkedin"></i></a>
                     </div>
                     <?php 
                         if($isLogin == true)
@@ -132,7 +129,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="cart-price">$150.00</li>
+                            <li class="cart-price"><?php echo '$'.$total ?></li>
                         </ul>
                     </div>
                 </div>
@@ -171,7 +168,6 @@
                         <li><a href="<?php echo $level.pages_path.'contact.php'?>">Contact</a></li>
                         <li><a href="#">Pages</a>
                             <ul class="dropdown">
-                                <li><a href="<?php echo $level.pages_path.'blog-details.php'?>">Blog Details</a></li>
                                 <li><a href="<?php echo $level.pages_path.'shopping-cart.php'?>">Shopping Cart</a></li>
                                 <li><a href="<?php echo $level.pages_path.'check-out.php'?>">Checkout</a></li>
                                 <li><a href="<?php echo $level.pages_path.'faq.php'?>">Faq</a></li>

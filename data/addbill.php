@@ -24,6 +24,6 @@
         $result2 = DP::run_query("update product set instock = ?, unitsold = ? where productid = ?",[$instock,$unitsold,$_SESSION['cart'][$productid]['productid']],3);
     }
 
-    unset($_SESSION['cart']);
+    unset($_SESSION['cart']);   
     header("location:".$level."index.php");
 ?>
