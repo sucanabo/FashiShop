@@ -31,9 +31,11 @@
                         if($isLogin == true)
                             {
                                 ?>
-                            <div class= "logout"><a href="<?php echo $level.function_path.'logout.php'?>">, Logout</a></div>
+                                
+                            <div class= "logout"><a href="<?php echo $level.function_path.'logout.php';?>">, Logout</a></div>
                             <?php 
                             }
+                            else {unset($_SESSION['cart']);}
                     ?>
                     
                 </div>

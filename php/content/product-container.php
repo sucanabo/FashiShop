@@ -45,8 +45,8 @@
                                                 ?>
 
                                                 <ul>
-                                                    <li class="w-icon active"><a href="<?php echo $level.data_path."add_cart.php?id=".$pd['productid'] ?>"><i class="icon_bag_alt"></i></a></li>
-                                                    <li class="quick-view"><a href="#">+ Quick View</a></li>
+                                                    <li class="w-icon active"><a href="<?php if ($isLogin == true) echo $level.data_path."add_cart.php?id=".$pd['productid']; else echo $level.pages_path.'login.php'; ?>"><i class="icon_bag_alt"></i></a></li>
+                                                    <li class="quick-view"><a href="<?php echo $level.pages_path.'product.php?productid='.$pd['productid'];?>">+ Quick View</a></li>
                                                     <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
                                                 </ul>
                                             </div>

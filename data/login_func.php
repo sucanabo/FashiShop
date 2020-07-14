@@ -7,7 +7,7 @@
     $listAcc = DP::run_query("select * from account",[],2);
     $allowLogin = -1;
     foreach($listAcc as $acc){
-        if(($username == $acc["username"] || $username == $acc["email"]) && $password == $acc["password"] ){
+        if(($username == $acc["username"] || $username == $acc["email"]) && $password == $acc["password"] && $acc['active'] == 'active'){
             $allowLogin =$acc["id"];
         }
     }
