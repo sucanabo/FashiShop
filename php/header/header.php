@@ -17,8 +17,6 @@
                         <select class="language_drop" name="countries" id="countries" style="width:300px;">
                             <option value='yt' data-image="<?php echo $level.img_path.'flag-1.jpg'?>" data-imagecss="../flag yt"
                                 data-title="English">English</option>
-                            <option value='yu' data-image="<?php echo $level.img_path.'flag-2.jpg'?>" data-imagecss="../flag yu"
-                                data-title="Bangladesh">German </option>
                         </select>
                     </div>
                     <div class="top-social">
