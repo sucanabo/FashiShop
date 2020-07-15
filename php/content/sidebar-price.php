@@ -1,18 +1,19 @@
+<form action="<?php echo $level.pages_path.'shop.php'?>">
+
 <div class="filter-widget">
     <h4 class="fw-title">Price</h4>
     <div class="filter-range-wrap">
         <div class="range-slider">
             <div class="price-input">
-                <input type="text" id="minamount">
-                <input type="text" id="maxamount">
+            <a>Min :</a>
+            <input type="number" method="GET" name="min" min="0" max="100" step="10" value="0" >-->
+            <a>Max :</a>
+            <input type="number" method="GET" name="max" <?php echo "number" ?> min="0" max="100" step="10" value="100">
             </div>
         </div>
-        <div class="price-range ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"
-            data-min="33" data-max="98">
-            <div class="ui-slider-range ui-corner-all ui-widget-header"></div>
-            <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span>
-            <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span>
-        </div>
+        
+        
     </div>
-    <a href="#" class="filter-btn">Filter</a>
+    <input type="submit" value="Filter"  class="filter-btn">
 </div>
+</form>

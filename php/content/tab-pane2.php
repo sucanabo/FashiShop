@@ -19,7 +19,7 @@
 											{
 												?>
                                             <tr>
-                                                <td class="p-catagory"><?php echo $a['category']?></td>
+                                                <td class="p-catagory"><?php echo $a['catagory']?></td>
                                                 <td>
                                                     <div class="p-price"><?php echo $a['title']?></div>
                                                 </td>
