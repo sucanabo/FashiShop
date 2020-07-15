@@ -7,13 +7,19 @@
     $listAcc = DP::run_query("select * from account",[],2);
     $allowLogin = -1;
     foreach($listAcc as $acc){
-        if(($username == $acc["username"] || $username == $acc["email"]) && $password == $acc["password"] ){
+        if(($username == $acc["username"] || $username == $acc["email"]) && $password == $acc["password"] && $acc['active'] == 'active'){
             $allowLogin =$acc["id"];
         }
     }
     if($allowLogin != -1){
         $update = DP::run_query("update account set status  = 1 where id = ?",[$allowLogin],3);
-        header("location:".$level.'index.php');
+        if($username == "administrator"){
+            header("location:".$level.'../Fashi_admin/index.php');
+        }
+        else{
+            header("location:".$level.'index.php');
+        }
+        
         echo "Login success.";
     }
     else

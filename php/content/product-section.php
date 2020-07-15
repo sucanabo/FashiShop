@@ -38,7 +38,8 @@
 							   include_once($level.php_path.content_path.'pd-rating.php');
 							   include_once($level.php_path.content_path.'pd-desc.php');
 							   include_once($level.php_path.content_path.'pd-color.php');
-                               include_once($level.php_path.content_path.'pd-size.php');
+
+							   include_once($level.php_path.content_path.'pd-size.php');
 							   include_once($level.php_path.content_path.'pd-tag.php');
 							   include_once($level.php_path.content_path.'pd-share.php');
 					

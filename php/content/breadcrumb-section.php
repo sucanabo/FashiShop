@@ -4,12 +4,12 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="breadcrumb-text">
-                    <a href="<?php echo $level.pages_path.'index.php'?>"><i class="fa fa-home"></i> Home</a>
+                    <a href="<?php echo $level.'index.php'?>"><i class="fa fa-home"></i> Home</a>
                     <?php 
                         if($shoppingcart_page == true || $product_page == true || $checkout_page == true)
                             echo '<a href="'.$level.pages_path.'shop.php'.'"'.'>Shop</a>';
                         if($blogdetail_page == true)
-                        echo '<a href="'.$level.pages_path.'shop.php'.'"'.'>Blog</a>';
+                        echo '<a href="'.$level.pages_path.'blog.php'.'"'.'>Blog</a>';
                     ?>
                     <span><?php
                         if($shop_page == true)

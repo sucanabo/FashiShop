@@ -50,18 +50,38 @@
                 </div>
             </div>
         </div>
+        
         <div class="copyright-reserved">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="copyright-text">
+                        
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </div>
                         <div class="payment-pic">
+                        <div class="copyright-text">
                             <img src=<?php echo $level.img_path.'payment-method.png'?> alt="">
+                          
+                            <?php
+
+                                $file = $level."access_number.txt";
+                                $open = fopen ($file, "r");
+                                $view = fread ($open, filesize ($file));
+                                fclose ($open);
+                                $view++; 
+
+                                $open = fopen($file,"w");
+                                fwrite($open,$view);
+                                fclose($open);
+                                echo " Số Lượng Truy Cập Trang Wed: ".$view;
+                            ?>
+                            </div>
                         </div>
+                       
                     </div>
                 </div>
             </div>

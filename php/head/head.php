@@ -27,5 +27,5 @@
     <link rel="stylesheet" href="<?php echo $level.css_path ?>css_shop.css" type="text/css">
         <?php }
         else ?>
-        <link rel="stylesheet" href="<?php echo $level.css_path ?>style.css" type="text/css"><?php}?>
+        <link rel="stylesheet" href="<?php echo $level.css_path ?>style.css" type="text/css">
 </head>

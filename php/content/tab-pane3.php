@@ -23,8 +23,26 @@
                                                     $date = $today['mday']."/".$today['mon']."/".$today['year'];
                                                     echo $date;
                                                     ?></span></h5>
+                                                    
                                                     <div class="at-reply"><?php echo $a['cmt'];?></div>
                                                 </div>
+                                                <?php
+                                                    if($accIndex[0]['type']==1){
+                                                ?>
+                                                <div class="delcmt-btn">
+                                                    <a href="<?php echo $level.function_path.'del-cmt.php?id='.$a['id'].'&productid='.$a['productid'] ?>"><i class="ti-close"></i></a>
+                                                </div>
+                                                <?php if($a['status'] == 0){
+                                                    ?>
+                                                        <div class="approve-btn">
+                                                            <a href ="<?php echo $level.function_path.'approve-cmt.php?id='.$a['id'].'&prid='.$a['productid']?>" class = "site-btn ">Approve</a>
+                                                        </div>
+                                                    <?php
+                                                }
+                                                ?>
+                                                <?php
+                                                    }
+                                                ?>
                                             </div>
                                             
 										<?php
