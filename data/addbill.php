@@ -13,7 +13,7 @@
     $fulladdress = $street." ".$town." ".$cun;
     $email = $_POST['email'];
     $phone = $_POST['phone'];
-    $result = DP::run_query( "Insert into bill(customername,phone,address,total,status,Email) value(?,?,?,?,?,?)",[$fullname,$phone,$fulladdress,$total,1,$email],3 ); 
+    $result = DP::run_query( "Insert into bill(customername,phone,address,total,status,Email,datef) value(?,?,?,?,?,?,NOW())",[$fullname,$phone,$fulladdress,$total,1,$email],3 ); 
     $idbillnow = DP::run_query("SELECT id FROM bill ORDER by id DESC LIMIT 0,1",[],2);
     foreach($_SESSION['cart'] as $productid=>$quantity)
     {
@@ -24,6 +24,6 @@
         $result2 = DP::run_query("update product set instock = ?, unitsold = ? where productid = ?",[$instock,$unitsold,$_SESSION['cart'][$productid]['productid']],3);
     }
 
-    unset($_SESSION['cart']);
+    unset($_SESSION['cart']);   
     header("location:".$level."index.php");
 ?>

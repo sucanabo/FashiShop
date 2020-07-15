@@ -4,10 +4,9 @@
     include($level."DB.php");
     session_start();
     $id = $_GET['id'];
-    $product=DP::run_query("select * from product where productid = ?",[$id],2);
+    $product = DP::run_query("SELECT * FROM `product` where productid = ?",[$id],2);
     if($product[0]['instock']>0)
     {
-    
         $name = $product[0]['name'];
         $price = $product[0]['price'];
         $img = $product[0]['img'];
@@ -18,12 +17,12 @@
         else
         {
             $_SESSION['cart'][$id]
-            =array("productid"=>$id,"name"=>$name,"price"=>$price,"img"=>$img,"quantity"=>1); 
+            = array("productid" => $id,"name"=>$name,"price"=>$price,"img"=>$img,"quantity"=>1);
         }
-        header("location:".$level.pages_path."shopping-cart.php");
+        header('location:'.$level.pages_path."shopping-cart.php");
     }
     else
     {
-        header("location:".$level.pages_path."shop.php");
+        header('location:'.$level.pages_path.'shop.php');
     }
 ?>
