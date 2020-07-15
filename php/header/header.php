@@ -162,8 +162,8 @@
                         <li><a href="<?php echo $level.pages_path.'shop.php'?>">Shop</a></li>
                         <li><a href="#">Collection</a>
                             <ul class="dropdown">
-                                <li><a href=""<?php echo $level.pages_path.'shop.php?namegender=men'?>>Men's</a></li>
-                                <li><a href="<?php echo $level.pages_path.'shop.php?namegender=ươmen'?>">Women's</a></li>
+                                <li><a href="<?php echo $level.pages_path.'shop.php?namegender=men'?>">Men's</a></li>
+                                <li><a href="<?php echo $level.pages_path.'shop.php?namegender=women'?>">Women's</a></li>
                                 <li><a href="<?php echo $level.pages_path.'shop.php?namegender=kid'?>">Kid's</a></li>
                             </ul>
                         </li>

@@ -11,7 +11,6 @@ if($isAdmin == true){
 else
 {
     $comment = DP::run_query("SELECT * FROM `comment` WHERE productid=? and status = ?",[$productid,1],2);
-    echo "not admin";
 }
 
 $product = DP::run_query("SELECT *, product.name as prname, catagory.name as ctname FROM product,catagory WHERE product.catagory = catagory.id and productid=?",[$productid],2);
