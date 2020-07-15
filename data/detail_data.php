@@ -7,7 +7,6 @@ $women = DP::run_query("SELECT * FROM `product` WHERE productid=? limit 13,4",[$
 $men = DP::run_query("SELECT * FROM `product` WHERE productid=? limit 9,4",[$productid],2);
 if($isAdmin == true){
     $comment = DP::run_query("SELECT * FROM `comment` WHERE productid=?",[$productid],2);
-    var_dump("admin");
 }
 else
 {

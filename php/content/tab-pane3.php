@@ -32,9 +32,15 @@
                                                 <div class="delcmt-btn">
                                                     <a href="<?php echo $level.function_path.'del-cmt.php?id='.$a['id'].'&productid='.$a['productid'] ?>"><i class="ti-close"></i></a>
                                                 </div>
-                                                <div class="approve-btn">
-                                                    <button class = "site-btn ">Approve</button>
-                                                </div><?php
+                                                <?php if($a['status'] == 0){
+                                                    ?>
+                                                        <div class="approve-btn">
+                                                            <a href ="<?php echo $level.function_path.'approve-cmt.php?id='.$a['id'].'&prid='.$a['productid']?>" class = "site-btn ">Approve</a>
+                                                        </div>
+                                                    <?php
+                                                }
+                                                ?>
+                                                <?php
                                                     }
                                                 ?>
                                             </div>
