@@ -55,7 +55,7 @@
                             <form action="<?php echo $level.pages_path.'search.php'?>" method = "get" class="input-group">
                                 <input name="search" type="text" value="<?php if(isset($_GET['search'])){echo $_GET['search'];}?>"placeholder="What do you need?">
                                 <button type="submit" name="ok "value="search"><i class="ti-search"></i></button>
-                            </form>
+                            </form>     
                         </div>
                     </div>
                     <div class="col-lg-3 text-right col-md-3">
@@ -144,14 +144,9 @@
                         <i class="ti-menu"></i>
                         <span>All departments</span>
                         <ul class="depart-hover">
-                            <li class="active"><a href="#">Women’s Clothing</a></li>
-                            <li><a href="#">Men’s Clothing</a></li>
-                            <li><a href="#">Underwear</a></li>
-                            <li><a href="#">Kid's Clothing</a></li>
-                            <li><a href="#">Brand Fashion</a></li>
-                            <li><a href="#">Accessories/Shoes</a></li>
-                            <li><a href="#">Luxury Brands</a></li>
-                            <li><a href="#">Brand Outdoor Apparel</a></li>
+                            <li class="active"><a href="<?php echo $level.pages_path.'shop.php?namegender=women'?>">Women’s Clothing</a></li>
+                            <li><a href="<?php echo $level.pages_path.'shop.php?namegender=men'?>">Men’s Clothing</a></li>
+                            <li><a href="<?php echo $level.pages_path.'shop.php?namegender=kid'?>">Kid's Clothing</a></li>
                         </ul>
                     </div>
                 </div>

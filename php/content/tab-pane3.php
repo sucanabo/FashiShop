@@ -26,8 +26,11 @@
                                                     
                                                     <div class="at-reply"><?php echo $a['cmt'];?></div>
                                                 </div>
-                                                <?php
-                                                    if($accIndex[0]['type']==1){
+                                                <?php 
+                                                    if(!empty($accIndex)){
+                                                        ?>
+                                                        <?php
+                                                    if($accIndex[0]['type'] ==1 && $isLogin == true ){
                                                 ?>
                                                 <div class="delcmt-btn">
                                                     <a href="<?php echo $level.function_path.'del-cmt.php?id='.$a['id'].'&productid='.$a['productid'] ?>"><i class="ti-close"></i></a>
@@ -48,6 +51,10 @@
 										<?php
 										}
 										?>
+                                                        <?php
+                                                    }
+                                                ?>
+                                                
                                         </div>
                                         <div class="personal-rating">
                                             <h6>Your Ratind</h6>

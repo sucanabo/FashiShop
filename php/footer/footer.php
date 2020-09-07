@@ -7,8 +7,8 @@
                             <a href="#"><img src=<?php echo $level.img_path.'footer-logo.png'?> alt=""></a>
                         </div>
                         <ul>
-                            <li>Address: 60-49 Road 11378 New York</li>
-                            <li>Phone: +65 11.188.888</li>
+                            <li>Address: HCM City</li>
+                            <li>Phone: +033 792 5980 </li>
                             <li>Email: sucanabo@gmail.com</li>
                         </ul>
                         <div class="footer-social">
@@ -58,7 +58,7 @@
                         <div class="copyright-text">
                         
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">PTS</a>
 
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </div>
@@ -77,7 +77,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                                 $open = fopen($file,"w");
                                 fwrite($open,$view);
                                 fclose($open);
-                                echo " Số Lượng Truy Cập Trang Wed: ".$view;
+                                echo "Web View: ".$view;
                             ?>
                             </div>
                         </div>
